@@ -8,6 +8,7 @@ import {
   faSquareLinkedin,
   faSquareBluesky,
 } from "@fortawesome/free-brands-svg-icons";
+import { faSquareXTwitter } from "@fortawesome/free-brands-svg-icons/faSquareXTwitter";
 
 const Footer = () => {
   const sections = [
@@ -108,27 +109,17 @@ const Footer = () => {
                 />
               </Link>
               <Link
-                href="https://tiktok.com/@lodestonehost"
-                aria-label="TikTok"
+                href="https://twitter.com/intranexuk"
+                aria-label="Twitter/X"
                 target="_blank"
               >
                 <FontAwesomeIcon
-                  icon={faTiktok}
-                  className="text-2xl hover:text-gray-300 transition-colors"
+                  icon={faSquareXTwitter}
+                  className="text-2xl hover:text-blue-400 transition-colors"
                 />
               </Link>
               <Link
-                href="https://bsky.app/profile/lodestone.host"
-                aria-label="Bluesky"
-                target="_blank"
-              >
-                <FontAwesomeIcon
-                  icon={faSquareBluesky}
-                  className="text-2xl hover:text-sky-400 transition-colors"
-                />
-              </Link>
-              <Link
-                href="https://linkedin.com/company/lodestoneuk"
+                href="https://linkedin.com/company/intranex-uk"
                 aria-label="LinkedIn"
                 target="_blank"
               >

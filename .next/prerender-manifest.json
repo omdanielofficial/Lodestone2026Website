@@ -55,7 +55,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/contact": {
+    "/hytale-hosting": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -68,8 +68,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/contact",
-      "dataRoute": "/contact.rsc",
+      "srcRoute": "/hytale-hosting",
+      "dataRoute": "/hytale-hosting.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -79,7 +79,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/dedicated-servers": {
+    "/minecraft-hosting": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -92,32 +92,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/dedicated-servers",
-      "dataRoute": "/dedicated-servers.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/discord-bot-hosting": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/discord-bot-hosting",
-      "dataRoute": "/discord-bot-hosting.rsc",
+      "srcRoute": "/minecraft-hosting",
+      "dataRoute": "/minecraft-hosting.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -175,7 +151,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/game-hosting": {
+    "/contact": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -188,8 +164,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/game-hosting",
-      "dataRoute": "/game-hosting.rsc",
+      "srcRoute": "/contact",
+      "dataRoute": "/contact.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -223,54 +199,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/minecraft-hosting": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/minecraft-hosting",
-      "dataRoute": "/minecraft-hosting.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/hytale-hosting": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/hytale-hosting",
-      "dataRoute": "/hytale-hosting.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/": {
       "experimentalBypassFor": [
         {
@@ -286,6 +214,78 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/",
       "dataRoute": "/index.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/discord-bot-hosting": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/discord-bot-hosting",
+      "dataRoute": "/discord-bot-hosting.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/game-hosting": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/game-hosting",
+      "dataRoute": "/game-hosting.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/dedicated-servers": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/dedicated-servers",
+      "dataRoute": "/dedicated-servers.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
