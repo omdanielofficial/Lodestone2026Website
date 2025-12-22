@@ -2,13 +2,13 @@
   "/_not-found/page": "/_not-found",
   "/favicon.ico/route": "/favicon.ico",
   "/page": "/",
+  "/about-us/page": "/about-us",
   "/discord-bot-hosting/page": "/discord-bot-hosting",
-  "/game-hosting/page": "/game-hosting",
   "/dedicated-servers/page": "/dedicated-servers",
   "/minecraft-hosting/page": "/minecraft-hosting",
-  "/about-us/page": "/about-us",
-  "/contact/page": "/contact",
-  "/hytale-hosting/page": "/hytale-hosting",
+  "/game-hosting/page": "/game-hosting",
   "/sitemap/page": "/sitemap",
+  "/hytale-hosting/page": "/hytale-hosting",
+  "/contact/page": "/contact",
   "/tos-dev/page": "/tos-dev"
 }
