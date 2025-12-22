@@ -13,16 +13,12 @@ const Trustpilot = () => {
               Your Unbeatable Gaming Companion
             </div>
             <div className="text-center text-gray-300">
-              Since 1998, we&apos;ve been your go-to provider for Minecraft and
-              other game server hosting, offering support for all Minecraft
-              versions and a commitment to seamless gameplay. Trust Nusantara
-              for a dependable server that simplifies modding and elevates your
-              gaming experience.
+            &quot;<i>Lodestone&apos;s hosting is fast, reliable, and secure. Downtime has been virtually non-existent, and the setup process was seamless. <br></br>It&apos;s rare to find a hosting company that combines technical excellence with such a personal touch, but Lodestone truly delivers on both fronts.</i>&quot;
             </div>
-            <Link href="https://trustpilot.com">
+            <Link href="https://trustpilot.com/review/lodestone.host">
               <div className="subheader-text flex flex-row flex-wrap justify-center gap-2.5 text-center text-base">
                 <p className="mb-0 font-medium">Excellent</p>
-                <p className="mb-0 font-bold">4.7/5.0</p>
+                <p className="mb-0 font-bold"></p>
                 <p className="mb-0">
                   <svg
                     viewBox="0 0 128 24"
@@ -46,7 +42,6 @@ const Trustpilot = () => {
                     ></path>
                   </svg>
                 </p>
-                <p className="mb-0">1,998+ Reviews</p>
                 <p className="mb-0">
                   <svg
                     viewBox="0 0 104 24"

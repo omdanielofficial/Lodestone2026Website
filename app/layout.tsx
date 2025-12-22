@@ -34,42 +34,42 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Nusantara - Game Server Hosting",
+  title: "Lodestone - Affordable & Reliable Game Hosting",
   description:
-    "Nusantara provides the best Minecraft server hosting since 1998. Easy to set up, 24/7 support, with instant modpack and plugin install. Starting at $3.",
+    "Powerful game server hosting with unlimited slots, Ryzen 9 9950X CPUs, and NVMe storage. Experience lag-free gameplay and seamless performance for all your favourite games!",
   keywords:
-    "Nusantara, Nusantarahosting, Nusantara hosting, game server hosting, ARK server, Rust server, Minecraft server, Valheim server, multiplayer gaming, friends gaming, instant server setup, user-friendly gaming, website hosting, domain hosting, gaming community, online gaming, dedicated servers, server management, hosting solutions, cheap",
-  authors: [{ name: "Nusantara" }],
-  applicationName: "Nusantara",
+    "game server hosting, Minecraft hosting, web hosting, 9950x hosting, game hosting, 99.99% uptime, cheap Minecraft hosting, high-performance hosting, 24/7 support, affordable hosting plans, lodestone",
+  authors: [{ name: "Lodestone" }],
+  applicationName: "Lodestone",
   robots: "index, follow",
   openGraph: {
-    title: "Nusantara - Game Server Hosting",
+    title: "Lodestone - Affordable & Reliable Game Hosting",
     description:
-      "Nusantara provides the best Minecraft server hosting since 1998. Easy to set up, 24/7 support, with instant modpack and plugin install. Starting at $3.",
-    url: "https://nusantara-pi.vercel.app",
-    siteName: "Nusantara",
+      "Powerful game server hosting with unlimited slots, Ryzen 9 9950X CPUs, and NVMe storage. Experience lag-free gameplay and seamless performance for all your favourite games!",
+    url: "https://lodestone.host/",
+    siteName: "Lodestone",
     type: "website",
     images: [
       {
-        url: "https://nusantara-pi.vercel.app/assets/images/seo/1200x630.webp",
+        url: "https://lodestone.host/assets/images/seo/1200x630.webp",
         width: 1200,
         height: 630,
-        alt: "Logo Nusantara",
+        alt: "Lodestone Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@Nusantara",
-    title: "Nusantara - Game Server Hosting",
+    site: "@Lodestone",
+    title: "Lodestone - Affordable & Reliable Game Hosting",
     description:
-      "Nusantara provides the best Minecraft server hosting since 1998. Easy to set up, 24/7 support, with instant modpack and plugin install. Starting at $3.",
+      "Powerful game server hosting with unlimited slots, Ryzen 9 9950X CPUs, and NVMe storage. Experience lag-free gameplay and seamless performance for all your favourite games!",
     images: [
       {
-        url: "https://nusantara-pi.vercel.app/assets/images/seo/1200x630.webp",
+        url: "https://lodestone.host/assets/images/seo/1200x630.webp",
         width: 1200,
         height: 630,
-        alt: "Logo Nusantara",
+        alt: "Lodestone Logo",
       },
     ],
   },
@@ -93,11 +93,12 @@ export default function RootLayout({
       lang="en"
       className="scrollbar-thin scrollbar-thumb-violet-800 scrollbar-track-primary scrollbar-thumb-rounded-lg scrollbar-track-rounded-lg"
     >
-      {/* 
-      <GoogleTagManager gtmId="GTM-ABCDEFGH" />
-      <GoogleAnalytics gaId="G-ABCDEFGH" /> 
-      */}
-      <body className={montserrat.className}>
+      <head>
+        {/* Add any meta tags or external scripts here */}
+      </head>
+      <body className="montserrat">
+        <GoogleTagManager gtmId="GT-NGS98CTQ" />
+        <GoogleAnalytics gaId="G-9J1KM899H6" />
         <div className="text-white">
           <UpdateSchemaOrg />
           <CanonicalURL />

@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 const UpdateMetaTags = () => {
   const pathname = usePathname();
-  const fullUrl = `https://nusantara-pi.vercel.app${pathname}`;
+  const fullUrl = `https://lodestone.host${pathname}`;
 
   useEffect(() => {
     const canonicalLink = document.querySelector("link[rel='canonical']");

@@ -44,7 +44,7 @@ const CookieBanner = () => {
     setTimeout(() => {
       setShowManageModal(false);
       setIsClosing(false);
-    }, 300); // Durasi sesuai dengan transisi CSS
+    }, 300); 
   };
 
   const handleSavePreferences = () => {
@@ -78,10 +78,10 @@ const CookieBanner = () => {
             We use cookies to improve your experience on our site. By
             continuing, you accept our{" "}
             <Link
-              href="/privacy"
+              href="/privacy-policy"
               className="font-semibold text-primary underline"
             >
-              cookie policy.
+              Privacy Policy.
             </Link>
           </p>
           <div className="flex w-full space-x-2">

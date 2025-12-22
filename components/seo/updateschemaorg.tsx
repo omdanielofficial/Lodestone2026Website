@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 const UpdateSchemaOrg = () => {
   const pathname = usePathname();
-  const fullUrl = `https://nusantara-pi.vercel.app${pathname}`;
+  const fullUrl = `https://lodestone.host${pathname}`;
 
   useEffect(() => {
     const metaName = document.title || "Default Name";
@@ -18,32 +18,32 @@ const UpdateSchemaOrg = () => {
       "@context": "https://schema.org",
       "@type": "Organization",
       name: metaName,
-      legalName: "Nusantara",
-      foundingDate: "1998",
-      logo: "https://nusantara-pi.vercel.app/assets/images/logo-nusantara-400x400.png",
+      legalName: "Lodestone Technologies LTD",
+      foundingDate: "2024",
+      logo: "https://nusantara-pi.vercel.app/assets/images/logo.png",
       image:
-        "https://nusantara-pi.vercel.app/assets/images/logo-nusantara-400x400.png",
+        "https://nusantara-pi.vercel.app/assets/images/logo.png",
       url: fullUrl,
       description: metaDescription,
       address: {
         "@type": "PostalAddress",
         streetAddress:
-          "Jl. Boulevard Bar. Raya No.6a, RT.18/RW.8, Klp. Gading Bar., Kec. Klp. Gading, Jkt Utara, Daerah Khusus Ibukota Jakarta 14240",
-        addressLocality: "Jakarta",
-        addressRegion: "Daerah Khusus Ibu Kota Jakarta",
-        postalCode: "14240",
-        addressCountry: "IDN",
+          "82A James Carter Road, Mildenhall, Suffolk, United Kingdom, IP28 7DE",
+        addressLocality: "Mildenhall",
+        addressRegion: "Midenhall, Suffolk",
+        postalCode: "IP28 7DE",
+        addressCountry: "GBR",
       },
       contactPoint: {
         "@type": "ContactPoint",
-        contactType: "Support Agent",
-        url: "https://nusantara-pi.vercel.app/contact",
+        contactType: "Support Tickets",
+        url: "https://billing.lodestone.host/submitticket.php",
       },
       sameAs: [
-        "https://www.facebook.com/nusantara",
-        "https://www.instagram.com/nusantara/",
-        "https://twitter.com/nusantara",
-        "https://www.youtube.com/channel/nusantara",
+        "https://x.com/lodestone_host",
+        "https://youtube.com/@lodestonehost",
+        "https://tiktok.com/@lodestonehost",
+        "https://linkedin.com/company/lodestonetechnologies",
       ],
     };
 
@@ -55,15 +55,15 @@ const UpdateSchemaOrg = () => {
       description: metaDescription,
       image: {
         "@type": "ImageObject",
-        url: "https://nusantara-pi.vercel.app/assets/images/logo-nusantara-400x400.png",
+        url: "https://nusantara-pi.vercel.app/assets/images/logo.png",
         width: "400",
         height: "400",
       },
       sameAs: [
-        "https://www.facebook.com/nusantara",
-        "https://www.instagram.com/nusantara/",
-        "https://twitter.com/nusantara",
-        "https://www.youtube.com/channel/nusantara",
+        "https://x.com/lodestone_host",
+        "https://youtube.com/@lodestonehost",
+        "https://tiktok.com/@lodestonehost",
+        "https://linkedin.com/company/lodestonetechnologies",
       ],
     };
 
@@ -77,13 +77,13 @@ const UpdateSchemaOrg = () => {
       mainEntity: {
         "@type": "Service",
         name: metaName,
-        serviceType: "Gaming",
+        serviceType: "Game Hosting",
         provider: {
           "@type": "Organization",
           name: metaName,
           description: metaDescription,
           url: fullUrl,
-          logo: "https://nusantara-pi.vercel.app/assets/images/logo-nusantara-400x400.png",
+          logo: "https://nusantara-pi.vercel.app/assets/images/logo.png",
         },
         areaServed: "Worldwide",
         description: metaDescription,
@@ -100,7 +100,7 @@ const UpdateSchemaOrg = () => {
       "@context": "https://schema.org",
       "@type": "WebPageElement",
       keywords:
-        "nusantara, nusantarahosting, nusantara hosting, game server hosting, ARK server, Rust server, Minecraft server, Valheim server, multiplayer gaming",
+        "lodestone, lodestonehosting, lodestone hosting, game server hosting, ARK server, Rust server, Minecraft server, Valheim server, multiplayer gaming",
       text: metaDescription,
       mentions: {
         "@type": "Thing",
@@ -119,7 +119,7 @@ const UpdateSchemaOrg = () => {
         worstRating: "1",
       },
       image:
-        "https://nusantara-pi.vercel.app/assets/images/logo-nusantara-400x400.png",
+        "https://nusantara-pi.vercel.app/assets/images/logo.png",
       name: metaName,
       sku: "mainPage",
       description: metaDescription,
@@ -131,7 +131,7 @@ const UpdateSchemaOrg = () => {
         offerCount: 40,
         lowPrice: 3,
         highPrice: 97,
-        priceCurrency: "USD",
+        priceCurrency: "GBP",
       },
     };
 

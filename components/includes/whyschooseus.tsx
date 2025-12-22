@@ -14,9 +14,9 @@ const features = [
         />
       </svg>
     ),
-    title: "Uptime 99,9%",
+    title: "99.99% Uptime Guarantee",
     description:
-      "Our infrastructure, housed in top-tier data centers with the most reliable uplinks, allows us to offer our clients an impressive 99.5% uptime for their services.",
+      "Our infrastructure, housed in top-tier data centres, allows us to boast an impressive SLA-backed 99.99% uptime for all services.",
   },
   {
     icon: (
@@ -33,9 +33,9 @@ const features = [
         />
       </svg>
     ),
-    title: "Support 24 / 7",
+    title: "24/7 Support",
     description:
-      "We are dedicated to supporting you at all times. Our 24/7 Support Team is available to address any commercial or technical issues you may encounter.",
+      "Our experienced support team is available around the clock to assist you, simply open a ticket and we'll be on the case.",
   },
   {
     icon: (
@@ -54,7 +54,7 @@ const features = [
     ),
     title: "DDoS Protection",
     description:
-      "ur services are protected by enterprise-level security against DDoS attacks, with a capacity of up to 17Tbps, ensuring your services remain online seamlessly.",
+      "Keep your servers online with enterprise-grade NeoProtect protection, including network filtering and protection layers.",
   },
   {
     icon: (
@@ -71,29 +71,32 @@ const features = [
         />
       </svg>
     ),
-    title: "NvMe Storage",
+    title: "Powerful Hardware",
     description:
-      "Immerse yourself in lightning-fast load times and seamless performance with NVMe storage technology, providing unparalleled speed and responsiveness.",
+      "We use the latest Ryzen 9 9950X processors with NVMe storage for unparalleled performance.",
   },
-  {
-    icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        width="32"
-        height="32"
-        fill="currentColor"
-      >
-        <path
-          fill="#BE185D"
-          d="m23,11c.552,0,1-.447,1-1s-.448-1-1-1h-1v-2h1c.552,0,1-.447,1-1s-.448-1-1-1h-1.418c-.505-1.151-1.431-2.077-2.582-2.582v-1.418c0-.553-.448-1-1-1s-1,.447-1,1v1h-2v-1c0-.553-.448-1-1-1s-1,.447-1,1v1h-2v-1c0-.553-.448-1-1-1s-1,.447-1,1v1h-2v-1c0-.553-.448-1-1-1s-1,.447-1,1v1.418c-1.151.505-2.077,1.431-2.582,2.582h-1.418c-.552,0-1,.447-1,1s.448,1,1,1h1v2h-1c-.552,0-1,.447-1,1s.448,1,1,1h1v2h-1c-.552,0-1,.447-1,1s.448,1,1,1h1.418c.505,1.151,1.431,2.077,2.582,2.582v1.418c0,.553.448,1,1,1s1-.447,1-1v-1h2v1c0,.553.448,1,1,1s1-.447,1-1v-1h2v1c0,.553.448,1,1,1s1-.447,1-1v-1h2v1c0,.553.448,1,1,1s1-.447,1-1v-1.418c1.151-.505,2.077-1.431,2.582-2.582h1.418c.552,0,1-.447,1-1s-.448-1-1-1h-1v-2h1c.552,0,1-.447,1-1s-.448-1-1-1h-1v-2h1Zm-6,9H7c-1.654,0-3-1.346-3-3V7c0-1.654,1.346-3,3-3h10c1.654,0,3,1.346,3,3v10c0,1.654-1.346,3-3,3Zm0-13v10c0,.553-.448,1-1,1s-1-.447-1-1V7c0-.553.448-1,1-1s1,.447,1,1Zm-5.435.302c-.182-.777-.811-1.299-1.565-1.299s-1.383.521-1.561,1.28l-2.409,9.471c-.136.535.188,1.079.723,1.215.54.142,1.08-.187,1.216-.723l.317-1.246h3.428l.317,1.246c.115.453.522.754.969.754.082,0,.164-.01.247-.031.535-.136.859-.68.723-1.215l-2.404-9.452Zm-2.77,6.698l1.205-4.739,1.205,4.739h-2.411Z"
-        />
-      </svg>
-    ),
-    title: "Ultra-Fast Infrastructure",
-    description:
-      "Our hosting network is powered by high-performance AMD Ryzen 9 dedicated servers, delivering unparalleled game server performance.",
-  },
+{
+  icon: (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      width="32"
+      height="32"
+      fill="none"
+    >
+      <path
+        d="M13 2L6 13h5l-1 9 7-11h-5l1-9Z"
+        stroke="#FACC15"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  ),
+  title: "Instant Setup",
+  description:
+    "Most services are provisioned instantly after purchase so you can get started immediately.",
+},
   {
     icon: (
       <svg
@@ -115,9 +118,9 @@ const features = [
         />
       </svg>
     ),
-    title: "Powerful Panel",
+    title: "Intuitive Control Panels",
     description:
-      "We use Pterodactyl as our premium control panel for game servers. This user-friendly and efficient platform is ideal for managing any project.",
+      "We use modified versions of industry-leading control panels with modern interfaces.",
   },
 ];
 
@@ -128,16 +131,16 @@ const WhyChooseUs = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `radial-gradient(closest-side, rgba(35, 39, 46, .70), #23272E), url('/assets/images/homepage/features-background.webp')`,
+            backgroundImage: `radial-gradient(closest-side, rgba(35, 39, 46, .70), #23272E), url('/assets/images/homepage/features-background.png')`,
           }}
         ></div>
         <div className="relative mx-auto max-w-7xl">
           <div className="mb-10 text-center">
             <div className="mb-4 text-xl font-bold lg:text-3xl">
-              Why Choose Nusantara?
+              Why Choose Lodestone?
             </div>
             <p className="text-gray-300">
-              Discover the features that set Nusantara apart from the rest.
+            Quickly get your game server or application online with us.
             </p>
           </div>
           <div className="-mx-4 flex flex-wrap">

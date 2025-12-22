@@ -6,17 +6,17 @@ const elements = [
   {
     name: "dashboard",
     label: "🛖 Dashboard",
-    src: "/assets/images/game-panel/dashboard.webp",
+    src: "/assets/images/game-panel/dashboard.png",
   },
   {
     name: "filemanagement",
     label: "🗂️ File Management",
-    src: "/assets/images/game-panel/filemanagement.webp",
+    src: "/assets/images/game-panel/filemanager.png",
   },
   {
-    name: "plugininstaller",
-    label: "🧩 Plugin Installer",
-    src: "/assets/images/game-panel/plugininstaller.webp",
+    name: "modpackinstaller",
+    label: "🧩 Modpack Installer",
+    src: "/assets/images/game-panel/modpackinstaller.png",
   },
 ];
 
@@ -32,18 +32,16 @@ const GamePanel = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `radial-gradient(closest-side, rgba(30, 34, 39, .70), #1E2227), url('/assets/images/game-panel/background.webp')`,
+          backgroundImage: `radial-gradient(closest-side, rgba(30, 34, 39, .70), #1E2227), url('/assets/images/homepage/tp-bg.webp')`,
         }}
       ></div>
       <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 lg:grid-cols-2">
         <div className="flex flex-col gap-4">
           <h1 className="text-xl font-bold lg:text-3xl">
-            Experience Nusantara Control Panel
+            Lodestone Game Panel
           </h1>
           <p className="text-gray-300">
-            Pterodactyl is the premium panel used by us to control gaming
-            services, offering our clients a user-friendly and efficient
-            platform.
+          An intuitive interface for managing your game servers with real-time metrics, unrestricted file access, and dozens of essential features.
           </p>
           {elements.map((element) => (
             <div

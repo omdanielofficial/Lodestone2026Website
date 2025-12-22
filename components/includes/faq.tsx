@@ -18,20 +18,20 @@ const FAQs = () => {
 
   const faqData = [
     {
-      question: "🌁 Lorem ipsum dolor, sit amet?",
-      answer: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur quae ab voluptate dolor tenetur eligendi nostrum, explicabo quas maiores, soluta placeat qui consectetur veniam libero pariatur, nobis itaque dignissimos! Aperiam?`,
+      question: "🌍 Where are your servers located?",
+      answer: `Our services are hosted in data centres located around the world. If possible, we can transfer your server to a different location completely free-of-charge, because you shouldn't have to pay extra for no reason. Our services are currently located in New York City, United States.`,
     },
     {
-      question: "🌉 Sit amet consectetur adipisicing elit?",
-      answer: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur quae ab voluptate dolor tenetur eligendi nostrum, explicabo quas maiores, soluta placeat qui consectetur veniam libero pariatur, nobis itaque dignissimos! Aperiam?`,
+      question: "💵 Do you offer refunds?",
+      answer: `Yes, we offer a 24 hour money-back guarantee for all services except dedicated servers. If you're not satisfied with our services within the first 24 hours after purchase, we'll provide a full refund, no questions asked.`,
     },
     {
-      question: "🌌 Consequatur quae ab voluptate dolor?",
-      answer: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur quae ab voluptate dolor tenetur eligendi nostrum, explicabo quas maiores, soluta placeat qui consectetur veniam libero pariatur, nobis itaque dignissimos! Aperiam?`,
+      question: "🚀 Can I upgrade my plan later?",
+      answer: `We understand the importance of having flexibility and being able to upgrade your plan. For most services, you're able to easily switch between plans in only a few clicks. When upgrading, you'll only have to pay the difference in cost.`,
     },
     {
-      question: "🌃 Tenetur eligendi nostrum, explicabo?",
-      answer: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur quae ab voluptate dolor tenetur eligendi nostrum, explicabo quas maiores, soluta placeat qui consectetur veniam libero pariatur, nobis itaque dignissimos! Aperiam?`,
+      question: "💳 Which payment methods are accepted?",
+      answer: `We support payments through PayPal or Stripe (credit and debit cards). We make the billing process simple so that you can focus on managing your services.`,
     },
   ];
 
@@ -43,22 +43,20 @@ const FAQs = () => {
             Frequently Asked Questions
           </h2>
           <p className="mt-3 max-w-md text-center text-gray-300 lg:text-left">
-            Got questions? Check out these FAQs from our latest customers. If
-            you need further assistance, explore our knowledge base or reach out
-            to our support team.
+          Find quick answers to the most common questions about our services. If you still need help, you can check out our extensive support docs or contact our team.
           </p>
           <div className="mt-6 flex flex-wrap gap-2.5">
             <Link
-              href=""
+              href="https://docs.lodestone.host"
               className="rounded-xl bg-violet-600 px-6 py-3 text-sm font-semibold hover:bg-violet-700"
             >
-              Full FAQ
+              Documentation
             </Link>
             <Link
-              href=""
+              href="/contact"
               className="rounded-xl bg-teritiary px-6 py-3 text-sm font-semibold hover:bg-secondary hover:outline hover:outline-teritiary"
             >
-              Knowledgebase
+              Contact Us
             </Link>
           </div>
         </div>

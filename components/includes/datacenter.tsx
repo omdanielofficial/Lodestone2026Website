@@ -18,35 +18,35 @@ const DataCenter = () => {
 
   const dataCenters = [
     {
-      name: "Dallas, US",
+      name: "New York City, United States",
       flagUrl: "/assets/images/worldmap/us.webp",
-      latitude: -2.8,
-      longitude: -58.6,
+      latitude: 19.5,
+      longitude: -47.6,
     },
+///    {
+///      name: "Chicago - Game Hosting",
+///      flagUrl: "/assets/images/worldmap/us.webp",
+///      latitude: 17.5,
+///      longitude: -55.6,
+///    },
+///    {
+///      name: "Montreal - VPS",
+///      flagUrl: "/assets/images/worldmap/ca.webp",
+///      latitude: 28,
+///      longitude: -44,
+///    },
     {
-      name: "Frankfurt, DE",
+      name: "Falkenstein, Germany (Coming Soon)",
       flagUrl: "/assets/images/worldmap/de.webp",
-      latitude: 25.8,
+      latitude: 20.8,
       longitude: -4,
     },
-    {
-      name: "Tokyo, JP",
-      flagUrl: "/assets/images/worldmap/jp.webp",
-      latitude: 0,
-      longitude: 73,
-    },
-    {
-      name: "Singapore, SG",
-      flagUrl: "/assets/images/worldmap/sg.webp",
-      latitude: -43,
-      longitude: 52,
-    },
-    {
-      name: "Jakarta, ID",
-      flagUrl: "/assets/images/worldmap/id.webp",
-      latitude: -55,
-      longitude: 57,
-    },
+///    {
+///      name: "Singapore (Coming Soon)",
+///      flagUrl: "/assets/images/worldmap/sg.webp",
+///      latitude: -43,
+///      longitude: 52,
+///    },
   ];
 
   useEffect(() => {
@@ -67,8 +67,7 @@ const DataCenter = () => {
               Our Global Reach
             </div>
             <p className="text-gray-300">
-              With data centers around the world, we&apos;re always close to
-              you.
+              Worldwide locations for customers across North & South America and Europe.
             </p>
           </div>
           <div className="relative">

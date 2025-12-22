@@ -1,44 +1,44 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sitemap - Nusantara",
+  title: "Lodestone | Sitemap",
   description:
-    "The best Minecraft server hosting starting at just $3/month with unlimited slots, 24/7/365 support, 2,000+ modpacks on one-click installs at 20 locations.",
+  "Providing powerful, reliable, and affordable game hosting across the world. Whether you're hosting a server for a few friends or a large community, you can trust us to maintain performance and uptime.",
   keywords:
-    "Nusantara, Nusantarahosting, Nusantara hosting, game server hosting, ARK server, Rust server, Minecraft server, Valheim server, multiplayer gaming, friends gaming, instant server setup, user-friendly gaming, website hosting, domain hosting, gaming community, online gaming, dedicated servers, server management, hosting solutions, cheap",
+  "game server hosting, Minecraft hosting, web hosting, game hosting, 99.99% uptime, cheap Minecraft hosting, high-performance hosting, 24/7 support, affordable hosting plans, lodestone",
   openGraph: {
-    title: "Sitemap - Nusantara",
+    title: "Lodestone | Sitemap",
     description:
-      "The best Minecraft server hosting starting at just $3/month with unlimited slots, 24/7/365 support, 2,000+ modpacks on one-click installs at 20 locations.",
+      "Providing powerful, reliable, and affordable game hosting across the world. Whether you're hosting a server for a few friends or a large community, you can trust us to maintain performance and uptime.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@Nusantara",
-    title: "Sitemap - Nusantara",
+    site: "@Lodestone",
+    title: "Lodestone | Sitemap",
     description:
-      "The best Minecraft server hosting starting at just $3/month with unlimited slots, 24/7/365 support, 2,000+ modpacks on one-click installs at 20 locations.",
+      "Providing powerful, reliable, and affordable game hosting across the world. Whether you're hosting a server for a few friends or a large community, you can trust us to maintain performance and uptime.",
   },
 };
 
 const Sitemap = () => {
   const sitemaps = [
-    { name: "Home", url: "/" },
+    { name: "Homepage", url: "/" },
+    { name: "Minecraft Hosting", url: "/minecraft-hosting" },
+    { name: "Game Hosting", url: "/game-hosting" },
+    { name: "Virtual Private Servers", url: "/vps-hosting" },
+    { name: "Dedicated Servers", url: "/dedicated-hosting" },
     { name: "About Us", url: "/about" },
-    { name: "Contact Us", url: "/contact" },
-    { name: "Sitemap", url: "/sitemap" },
-    { name: "Privacy Policy", url: "/privacy" },
-    { name: "Terms Of Service", url: "/tos" },
-    { name: "Service Level Agreement", url: "/sla" },
-    { name: "Games Server Hosting", url: "/games" },
-    { name: "Minecraft Server Hosting", url: "/minecraft-server-hosting" },
-    // Add more sitemap here
+    { name: "Contact", url: "/contact" },
+    { name: "Terms of Service", url: "/terms-of-service" },
+    { name: "Privacy Policy", url: "/privacy-policy" },
+    { name: "Service Level Agreement", url: "/service-level-agreement" }, 
   ];
 
   return (
     <section className="bg-secondary p-5 lg:p-16">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-8 text-2xl font-bold">Nusantara Sitemap</div>
+        <div className="mb-8 text-2xl font-bold">Sitemap</div>
         <ul className="grid grid-cols-1 lg:grid-cols-3">
           {sitemaps.map((sitemap, index) => (
             <li

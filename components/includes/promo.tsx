@@ -38,14 +38,13 @@ const Promo = () => {
             <div className="flex flex-col items-center gap-2 lg:flex-row">
               <div
                 className={`flex cursor-pointer items-center gap-2 rounded-xl border-2 border-dashed px-5 py-1 ${isCopied ? "cursor-default opacity-50" : ""}`}
-                onClick={() => !isCopied && copyToClipboard("NSNTR20")}
+                onClick={() => !isCopied && copyToClipboard("XMAS25")}
               >
                 <FontAwesomeIcon icon={faCopy} />
-                <p>{isCopied ? "COPIED ✓" : "NSNTR20"}</p>
+                <p>{isCopied ? "COPIED ✓" : "XMAS25"}</p>
               </div>
               <p>
-                <span className="font-bold">Get 20% off</span> on your first
-                order
+                <span className="font-bold">Christmas Sale:</span> Get 25% off your first 3 months on your next purchase until 3rd Jan 2026!
               </p>
             </div>
             <FontAwesomeIcon

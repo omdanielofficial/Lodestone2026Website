@@ -35,22 +35,22 @@ const BlogCard: React.FC<BlogCardProps> = ({
 const BlogCards: React.FC = () => {
   const blogPosts = [
     {
-      title: "How To Get Silica Pearls in ARK",
-      description: "In ARK, silica pearls are a precious material...",
-      imageUrl: "/assets/images/blog/1.webp",
-      link: "",
+      title: "Install Minecraft modpacks",
+      description: "Modify your game by adding new items...",
+      imageUrl: "/assets/images/blog/1.jpg",
+      link: "https://lodestone-technologies.gitbook.io/knowledgebase/game-panel/install-modpacks",
     },
     {
-      title: "Selling and Merging Pals in Palworld",
-      description: "Managing Your Pals In the world of Palworld...",
+      title: "Change a Minecraft seed",
+      description: "World seeds control the terrain generation...",
       imageUrl: "/assets/images/blog/2.webp",
-      link: "",
+      link: "https://lodestone-technologies.gitbook.io/knowledgebase/minecraft/change-server-world-seed",
     },
     {
-      title: "Terraria – an unforgettable classic",
-      description: "This is an action-adventure game, as well as...",
-      imageUrl: "/assets/images/blog/3.webp",
-      link: "",
+      title: "Set up the Dynmap plugin",
+      description: "Configure a web-based world map of your server...",
+      imageUrl: "/assets/images/blog/3.png",
+      link: "https://lodestone-technologies.gitbook.io/knowledgebase/minecraft-java/configure-dynmap",
     },
   ];
 
