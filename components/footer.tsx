@@ -51,6 +51,14 @@ const Footer = () => {
     },
   ];
 
+  const paymentMethods = [
+    "paypal",
+    "visa",
+    "mastercard",
+    "applepay",
+    "stripe",
+  ];
+
   return (
     <>
       {/* Top announcement bar */}
@@ -190,20 +198,37 @@ const Footer = () => {
             </div>
           ))}
         </div>
+<br></br>
+<div className="relative mx-auto mt-4 max-w-7xl overflow-x-auto whitespace-nowrap rounded-lg bg-gray-100">
+  <div className="flex items-center justify-between gap-3 rounded-lg px-6 py-2.5">
+    {/* Payment methods - left side, scrollable */}
+    <div className="flex items-center gap-3 min-w-0 flex-1 overflow-x-auto">
+      {paymentMethods.map((method, index) => (
+        <Image
+          width={98}
+          height={0}
+          key={index}
+          className="h-[40px] w-[auto] flex-shrink-0 px-1.5 py-1.5"
+          src={`/assets/images/methods/${method}.webp`}
+          alt={method}
+        />
+      ))}
+    </div>
+    
+    {/* Intranex logo - right side, fixed */}
+    <Image
+      src="/assets/images/intranex-logo.png"
+      alt="Intranex"
+      width={98}
+      height={0}
+      className="h-[40px] w-[auto] flex-shrink-0 px-1.5 py-1.5"
+    />
+  </div>
+</div>
+
+
       </footer>
 
-      {/* White strip section with centered logo */}
-      <div className="bg-white py-2">
-        <div className="flex justify-center">
-          <Image
-            src="/assets/images/intranex-logo.png"
-            alt="Intranex Logo"
-            width={120}
-            height={50}
-            className="opacity-80 hover:opacity-100 transition-opacity"
-          />
-        </div>
-      </div>
     </>
   );
 };

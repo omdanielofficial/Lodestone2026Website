@@ -31,6 +31,31 @@ const nextConfig = {
         destination: "https://cdn.intranex.org/filestore/public/legal-policies/lodestone-service-level-agreement.pdf", // change this
         permanent: true,
       },
+      {
+        source: "/tebex",
+        destination: "https://affiliate.tebex.io/r/a05c521a-d42e-441a-8723-e9396974f0d7", // change this
+        permanent: true,
+      },
+      {
+        source: "/customer-feedback",
+        destination: "https://forms.gle/7nQuXtwehMjX6mFV7", // change this
+        permanent: true,
+      },
+      {
+        source: "/minecraft",
+        destination: "/minecraft-hosting", // change this
+        permanent: true,
+      },
+      {
+        source: "/hytale",
+        destination: "/hytale-hosting", // change this
+        permanent: true,
+      },
+      {
+        source: "/knowledgebase",
+        destination: "https://lodestone-technologies.gitbook.io/knowledgebase", // change this
+        permanent: true,
+      },
     ];
   },
 };

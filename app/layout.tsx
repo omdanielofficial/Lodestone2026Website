@@ -97,8 +97,8 @@ export default function RootLayout({
         {/* Add any meta tags or external scripts here */}
       </head>
       <body className="montserrat">
-        <GoogleTagManager gtmId="GT-NGS98CTQ" />
-        <GoogleAnalytics gaId="G-9J1KM899H6" />
+        <GoogleTagManager gtmId="" />
+        <GoogleAnalytics gaId="" />
         <div className="text-white">
           <UpdateSchemaOrg />
           <CanonicalURL />
@@ -107,8 +107,8 @@ export default function RootLayout({
           {children}
           <Trustpillot />
           <WhyChooseUs />
-          <DataCenter />
           <GamePanel />
+          <DataCenter />
           <Faq />
           <BlogCards />
           <Footer />

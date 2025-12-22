@@ -3,20 +3,20 @@ import GameCard from "@/app/game-hosting/gamecard";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Lodestone | Game Hosting",
+  title: "Lodestone - Game Hosting",
   description:
-    "See our list of all games you can rent a server for from Lodestone. Find game server hosting for Minecraft, Palworld, Rust, and many others.",
+    "Powerful game servers with unlimited slots, bandwidth, and unbeatable prices. Play your favourite games with friends, lag-free. Hosted on Ryzen 9 9950X CPUs with NVMe storage.",
   keywords:
-    "Game servers, game server hosting, host games Lodestone, Lodestonehosting, CS2 hosting, counter strike hosting, valheim hosting, Lodestone hosting, game server hosting, ARK server, Rust server, Minecraft server, Valheim server, multiplayer gaming, friends gaming, instant server setup, user-friendly gaming, website hosting, domain hosting, gaming community, online gaming, dedicated servers, server management, hosting solutions, cheap",
+    "game hosting, game servers, minecraft hosting, hytale hosting, 9950x hosting, lodestone, lodehost, dedicated servers, discord bot hosting, rust hosting, palworld hosting, ark hosting, valheim hosting",
   openGraph: {
-    title: "Lodestone | Game Hosting",
+    title: "Lodestone - Game Hosting",
     description:
-    "See our list of all games you can rent a server for from Lodestone. Find game server hosting for Minecraft, Palworld, Rust, and many others.",
+    "Powerful game servers with unlimited slots, bandwidth, and unbeatable prices. Play your favourite games with friends, lag-free. Hosted on Ryzen 9 9950X CPUs with NVMe storage.",
   },
   twitter: {
-    title: "Lodestone | Game Hosting",
+    title: "Lodestone - Game Hosting",
     description:
-    "See our list of all games you can rent a server for from Lodestone. Find game server hosting for Minecraft, Palworld, Rust, and many others.",
+    "Powerful game servers with unlimited slots, bandwidth, and unbeatable prices. Play your favourite games with friends, lag-free. Hosted on Ryzen 9 9950X CPUs with NVMe storage.",
   },
 };
 
@@ -39,7 +39,7 @@ const Games = () => {
                     Game Hosting
                   </h1>
                   <p className="text-gray-300">
-                    Choose a game from our collection and easily launch a server in minutes.
+                    High-performance Ryzen 9 9950X servers and unlimited player slots for all your favourite games.
                   </p>
                 </div>
                 <Image

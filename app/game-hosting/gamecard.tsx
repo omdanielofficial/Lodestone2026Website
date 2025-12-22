@@ -17,37 +17,101 @@ const GameCard = () => {
       name: "Minecraft",
       href: "/minecraft-hosting",
       image: "/assets/images/game-hosting/minecraft.webp",
-      price: "£1.40",
+      price: "£3.00",
+    },
+    {
+      name: "Hytale",
+      href: "/hytale-hosting",
+      image: "/assets/images/game-hosting/hytale.png",
+      price: "?",
     },
     {
       name: "Palworld",
       href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/palworld",
       image: "/assets/images/game-hosting/palworld.webp",
-      price: "£11.20",
+      price: "£12.00",
     },
     {
       name: "Rust",
       href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/rust",
       image: "/assets/images/game-hosting/rust.webp",
-      price: "£8.40",
+      price: "£9.00",
     },
     {
       name: "Valheim",
       href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/valheim",
       image: "/assets/images/game-hosting/valheim.webp",
-      price: "£5.60",
+      price: "£6.00",
     },
     {
       name: "Counter-Strike 2",
       href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/cs2",
       image: "/assets/images/game-hosting/cs2.webp",
-      price: "£8.40",
-    },   
+      price: "£9.00",
+    },
+    {
+      name: "Unturned",
+      href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/unturned",
+      image: "/assets/images/game-hosting/unturned.avif",
+      price: "£3.00",
+    },
+    {
+      name: "Terraria",
+      href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/terraria",
+      image: "/assets/images/game-hosting/terraria.webp",
+      price: "£3.00",
+    },
+    {
+      name: "Project Zomboid",
+      href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/projectzomboid",
+      image: "/assets/images/game-hosting/projectzomboid.webp",
+      price: "£6.00",
+    },
+    {
+      name: "ARK: Survival Evolved",
+      href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/ark",
+      image: "/assets/images/game-hosting/ark.webp",
+      price: "£12.00",
+    },
+    {
+      name: "Garry's Mod",
+      href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/gmod",
+      image: "/assets/images/game-hosting/gmod.webp",
+      price: "£6.00",
+    },
+    {
+      name: "Enshrouded",
+      href: "/",
+      image: "/assets/images/game-hosting/enshrouded.webp",
+      price: "?",
+    },
+    {
+      name: "Factorio",
+      href: "/",
+      image: "/assets/images/game-hosting/factorio.webp",
+      price: "?",
+    },
+    {
+      name: "7 Days To Die",
+      href: "/",
+      image: "/assets/images/game-hosting/7d2d.webp",
+      price: "?",
+    },
+    {
+      name: "Satisfactory",
+      href: "/",
+      image: "/assets/images/game-hosting/satisfactory.webp",
+      price: "?",
+    },
   ];
 
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredGames, setFilteredGames] = useState(games);
   const [sortOrder, setSortOrder] = useState("");
+
+  const getNumericPrice = (price: string): number => {
+    return price === "?" ? Infinity : parseFloat(price.slice(1));
+  };
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value.toLowerCase();
@@ -73,13 +137,9 @@ const GameCard = () => {
     );
 
     if (sortOrder === "asc") {
-      filtered = filtered.sort(
-        (a, b) => parseFloat(a.price.slice(1)) - parseFloat(b.price.slice(1)),
-      );
+      filtered = filtered.sort((a, b) => getNumericPrice(a.price) - getNumericPrice(b.price));
     } else if (sortOrder === "desc") {
-      filtered = filtered.sort(
-        (a, b) => parseFloat(b.price.slice(1)) - parseFloat(a.price.slice(1)),
-      );
+      filtered = filtered.sort((a, b) => getNumericPrice(b.price) - getNumericPrice(a.price));
     }
 
     setFilteredGames(filtered);
@@ -153,7 +213,13 @@ const GameCard = () => {
                     <div className="font-bold">{game.name}</div>
                     <div>
                       <p>
-                        Starting from <b>{game.price}</b>
+                        {game.price === "?" ? (
+                          <>Coming Soon</>
+                        ) : (
+                          <>
+                            Starting from <b>{game.price}</b>
+                          </>
+                        )}
                       </p>
                     </div>
                   </div>
@@ -161,26 +227,30 @@ const GameCard = () => {
               </li>
             ))}
           </ul>
+
           <div className="mt-5 flex flex-col items-center justify-between rounded-xl bg-primary p-3 md:flex-row">
-            <div className="mb-4 flex md:mb-0">
+            <div className="mb-4 flex gap-2 md:mb-0">
               <FontAwesomeIcon
                 size="3x"
                 icon={faHeadset}
-                className="mr-4 h-12 text-blue-500"
+                className="h-12 text-blue-500"
               />
               <div className="flex flex-col">
                 <h2 className="font-bold">Need help picking a plan?</h2>
                 <p>
-                  Our support team is available to answer any questions you may have.
+                  Our sales team is available to answer any questions you may
+                  have.
                 </p>
               </div>
             </div>
-            <Link href="https://billing.lodestone.host/submitticket.php">
+            <Link href="/contact">
               <button className="w-40 rounded-xl bg-teritiary py-4 hover:bg-opacity-0 hover:outline hover:outline-teritiary active:bg-teritiary">
                 Get in Touch
               </button>
             </Link>
           </div>
+
+
         </div>
       </section>
     </>

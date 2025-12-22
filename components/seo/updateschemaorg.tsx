@@ -18,7 +18,7 @@ const UpdateSchemaOrg = () => {
       "@context": "https://schema.org",
       "@type": "Organization",
       name: metaName,
-      legalName: "Lodestone Technologies LTD",
+      legalName: "Intranex Limited",
       foundingDate: "2024",
       logo: "https://nusantara-pi.vercel.app/assets/images/logo.png",
       image:
@@ -40,10 +40,11 @@ const UpdateSchemaOrg = () => {
         url: "https://billing.lodestone.host/submitticket.php",
       },
       sameAs: [
-        "https://x.com/lodestone_host",
+        "https://discord.gg/lodestonehost",
         "https://youtube.com/@lodestonehost",
         "https://tiktok.com/@lodestonehost",
-        "https://linkedin.com/company/lodestonetechnologies",
+        "https://bsky.app/profile/lodestone.host",
+        "https://linkedin.com/company/lodestoneuk",
       ],
     };
 
@@ -60,10 +61,11 @@ const UpdateSchemaOrg = () => {
         height: "400",
       },
       sameAs: [
-        "https://x.com/lodestone_host",
+        "https://discord.gg/lodestonehost",
         "https://youtube.com/@lodestonehost",
         "https://tiktok.com/@lodestonehost",
-        "https://linkedin.com/company/lodestonetechnologies",
+        "https://bsky.app/profile/lodestone.host",
+        "https://linkedin.com/company/lodestoneuk",
       ],
     };
 

@@ -60,7 +60,7 @@ const DataCenter = () => {
 
   return (
     <>
-      <section className="overflow-hidden bg-primary p-5 lg:p-16">
+      <section className="overflow-hidden bg-secondary p-5 lg:p-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-6 text-center sm:mb-8 md:mb-10">
             <div className="mb-2 text-xl font-bold sm:mb-4 lg:text-3xl">

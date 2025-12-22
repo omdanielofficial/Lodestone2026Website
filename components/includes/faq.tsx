@@ -36,7 +36,7 @@ const FAQs = () => {
   ];
 
   return (
-    <section className="overflow-hidden bg-secondary p-5 lg:p-16">
+    <section className="overflow-hidden bg-primary p-5 lg:p-16">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 lg:grid-cols-2">
         <div className="relative flex flex-col items-center lg:items-start">
           <h2 className="text-center text-xl font-bold lg:text-3xl">

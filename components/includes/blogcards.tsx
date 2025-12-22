@@ -55,7 +55,7 @@ const BlogCards: React.FC = () => {
   ];
 
   return (
-    <div className="overflow-hidden bg-primary p-5 lg:p-16">
+    <div className="overflow-hidden bg-secondary p-5 lg:p-16">
       <div className="mx-auto max-w-7xl">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {blogPosts.map(({ title, description, imageUrl, link }, index) => (

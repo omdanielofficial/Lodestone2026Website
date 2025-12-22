@@ -2,38 +2,53 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Lodestone | Contact",
+  title: "Lodestone - Contact",
   description:
-    "Our experienced support team is available around the clock to assist you, simply contact us and we'll be on the case.",
+    "Our experienced support team is available around the clock to assist you, simply get in touch and we'll be on the case.",
   keywords:
     "Lodestone, lodestonehosting, Lodestone hosting, game server hosting, ARK server, Rust server, Minecraft server, Valheim server, multiplayer gaming, friends gaming, instant server setup, user-friendly gaming, website hosting, domain hosting, gaming community, online gaming, dedicated servers, server management, hosting solutions, cheap",
   openGraph: {
-    title: "Lodestone | Contact",
+    title: "Lodestone - Contact",
     description:
-      "Our experienced support team is available around the clock to assist you, simply contact us and we'll be on the case",
+      "Our experienced support team is available around the clock to assist you, simply get in touch and we'll be on the case",
   },
   twitter: {
-    title: "Lodestone | Contact",
+    title: "Lodestone - Contact",
     description:
-      "Our experienced support team is available around the clock to assist you, simply contact us and we'll be on the case",
+      "Our experienced support team is available around the clock to assist you, simply get in touch and we'll be on the case",
   },
 };
 
 const contactLinks = [
   {
-    title: "Support Tickets",
+    title: "Sales Enquiries",
     href: "https://billing.lodestone.host/submitticket.php",
-    description: "Create a ticket for general enquiries, technical support, and billing support.",
+    description: "Use this for sales enquiries, affiliate payouts, and other non-account specific questions. Tickets are answered 24/7.",
   },
   {
-    title: "Knowledgebase",
-    href: "https://billing.lodestone.host/knowledgebase",
-    description: "Browse the extensive range of articles we've written to help you use our services.",
+    title: "Technical Support",
+    href: "https://billing.lodestone.host/submitticket.php",
+    description: "Having technical issues with your service? Report bugs or errors here, and our team will help troubleshoot and resolve the problems. Tickets are answered 24/7.",
   },
   {
-    title: "Discord Community",
+    title: "Billing Support",
+    href: "https://billing.lodestone.host/submitticket.php",
+    description: "Use this for questions about your account, invoices, payments, subscriptions, or refunds. Tickets are answered Mon-Fri 10:00-17:00 GMT.",
+  },
+  {
+    title: "Support Docs",
+    href: "https://docs.lodestone.host/",
+    description: "Read our extensive documentation for guidance on managing your servers and account.",
+  },
+  {
+    title: "Community Discord",
     href: "https://discord.gg/lodestonehost",
-    description: "Start a conversation with other members of our community to receive public support.",
+    description: "Join our community to chat with others as well as receive community support.",
+  },
+  {
+    title: "Email Us",
+    href: "mailto:contact@lodestone.host",
+    description: "Prefer communicating via email? We aim to respond within three business days.",
   },
 ];
 
@@ -43,13 +58,13 @@ const Contact = () => {
       <section
         className="flex min-h-96 items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage: `radial-gradient(closest-side, rgba(35, 39, 46, 0.7), #23272E), url('/assets/images/about/about1.webp')`,
+          backgroundImage: `radial-gradient(closest-side, rgba(35, 39, 46, 0.7), #23272E), url('/assets/images/about-us/contact-banner.webp')`,
         }}
       >
         <div className="p-10 text-center">
           <h1 className="mb-4 text-xl font-bold lg:text-3xl">Contact Us</h1>
           <p className="w-full text-gray-300 md:w-[700px]">
-            Any questions or concerns? Don&apos;t hesitate to get in touch!
+            Any questions or concerns? Don't hesitate to get in touch! Our experienced team is available around the clock to assist customers with all kinds of enquiries.
           </p>
         </div>
       </section>
@@ -72,13 +87,15 @@ const Contact = () => {
           <div className="rounded-xl bg-gray-700 p-6 text-center max-w-3xl mx-auto hover:outline hover:outline-gray-200">
             <h2 className="mb-4 text-2xl font-semibold">Company Information</h2>
             <p className="mb-4">
-              Registered as <b>Lodestone Technologies Ltd</b> in England & Wales under CRN 16068461
+              Registered as <b>Intranex Limited</b> in England & Wales under CRN 16068461.
+              <br></br>
+              Lodestone is a trading name of Intranex Limited.
             </p>
-            <div className="space-y-4 text-left">
+            <div className="space-y-4 text-center">
               <div>
-                <h3 className="font-bold">Address</h3>
+                <h3 className="font-bold">Mail Address</h3>
                 <p>
-                  82A James Carter Road <br></br> Mildenhall <br></br> United Kingdom <br></br> IP28 7DE
+                  Intranex Limited <br></br> 82A James Carter Road <br></br> Mildenhall <br></br> United Kingdom <br></br> IP28 7DE
                 </p>
               </div>
               <div>
