@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Create your ultimate Hytale experience with our server hosting. Enjoy instant setup and seamless gameplay as you build, explore, and adventure with friends!",
   keywords:
-    "minecraft server, minecraft servers, create minecraft server, 247 minecraft server",
+    "hytale hosting, hytale, hytale server hosting, cheap hytale hosting, 9950x hytale hosting, lodestone, lodestone hytale hosting",
   openGraph: {
     title: "Lodestone - Hytale Hosting",
     description:

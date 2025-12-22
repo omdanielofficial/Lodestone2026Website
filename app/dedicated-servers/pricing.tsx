@@ -15,81 +15,58 @@ import {
 
 const plans = [
   {
-    name: "Ryzen 9 3900X",
-    cpu: "Ryzen 9 3900X",
-    cores: "12c/24t",
+    name: "Ryzen 7 7700X",
+    cpu: "Ryzen 7 7700X",
+    cores: "8C/16T",
     memory: "128GB DDR4",
-    storage: "2x 2TB NVMe",
-    pricebasic: "£115.00",
-    image: "/assets/images/dedicated-servers/ryzen9.webp",
-    location: "NYC",
+    storage: "2TB NVMe",
+    pricebasic: "£125.00",
+    image: "/assets/images/dedicated-servers/ryzen7.jpg",
+    location: "New York City",
     linkbasic: "https://billing.lodestone.host/submitticket.php",
   },
   {
     name: "Ryzen 9 5950X",
     cpu: "Ryzen 9 5950X",
-    cores: "16c/32t",
+    cores: "16C/32T",
     memory: "128GB DDR4",
-    storage: "1x 2TB NVMe",
+    storage: "2TB NVMe",
     pricebasic: "£140.00",
     image: "/assets/images/dedicated-servers/ryzen9.webp",
-    location: "NYC",
+    location: "New York City",
     linkbasic: "https://billing.lodestone.host/submitticket.php",
   },
   {
     name: "Ryzen 9 7950X",
     cpu: "Ryzen 9 7950X",
-    cores: "16c/32t",
-    memory: "128GB DDR5",
-    storage: "2x 2TB NVMe",
-    pricebasic: "£190.00",
-    image: "/assets/images/dedicated-servers/ryzen9.webp",
-    location: "NYC",
-    linkbasic: "https://billing.lodestone.host/submitticket.php",
-  },
-  {
-    name: "Ryzen 9 9900X",
-    cpu: "Ryzen 9 9900X",
-    cores: "12c/24t",
+    cores: "16C/32T",
     memory: "192GB DDR5",
     storage: "2x 4TB NVMe",
-    pricebasic: "£215.00",
+    pricebasic: "£160.00",
     image: "/assets/images/dedicated-servers/ryzen9.webp",
-    location: "NYC",
+    location: "New York City",
     linkbasic: "https://billing.lodestone.host/submitticket.php",
   },
   {
     name: "Ryzen 9 9950X",
     cpu: "Ryzen 9 9950X",
-    cores: "16c/32t",
-    memory: "192GB DDR5",
-    storage: "2x 4TB NVMe",
-    pricebasic: "£230.00",
-    image: "/assets/images/dedicated-servers/ryzen9.webp",
-    location: "NYC",
-    linkbasic: "https://billing.lodestone.host/submitticket.php",
-  },
-  {
-    name: "Ryzen 9 9950X",
-    cpu: "Ryzen 9 9950X",
-    cores: "16c/32t",
+    cores: "16C/32T",
     memory: "256GB DDR5",
     storage: "2x 4TB NVMe",
-    pricebasic: "£265.00",
+    pricebasic: "£225.00",
     image: "/assets/images/dedicated-servers/ryzen9.webp",
-    location: "NYC",
+    location: "New York City",
     linkbasic: "https://billing.lodestone.host/submitticket.php",
   },
 ];
 
 const features = [
   "99.99% Uptime",
-  "1 Gbps Uplink",
   "Quick Setup",
   "Reliable Hardware",
   "High Performance",
   "DDoS Protection",
-  "Managed & Unmanaged",
+  "Unmanaged Servers",
   "Full Root Access",
   "IPv6 Supported",
   "No Setup Fees",
@@ -110,10 +87,13 @@ const Pricing = () => {
       >
         <div className="p-10 text-center">
           <h1 className="mb-4 text-xl font-bold lg:text-3xl">
-            DEDICATED HOSTING
+            DEDICATED SERVERS
           </h1>
+<p className="mb-4 text-sm font-semibold opacity-80 lg:text-base">
+  LINUX & WINDOWS SUPPORTED
+  </p>
           <p className="w-full text-lg md:w-[700px]">
-            Unmanaged and managed bare metal dedicated servers with the latest <b>AMD Ryzen CPUs and full root access</b> to keep you in control. Perfect for large game servers and resource-intensive applications.
+            Bare metal dedicated servers with the latest AMD Ryzen CPUs, NVMe storage, and full root access. Perfect for large game servers and resource-intensive applications.
           </p>
         </div>
       </section>
@@ -124,7 +104,7 @@ const Pricing = () => {
             <table className="w-full bg-primary text-white rounded-xl overflow-hidden border border-white/20 shadow-xl">
               <thead>
                 <tr className="bg-[#7C3AED] text-white uppercase text-[15px]">
-                  <th className="px-4 py-5 font-bold border-b border-white/20 text-center"></th>
+                  <th className="px-4 py-5 font-bold border-b border-white/20 text-center">Processor</th>
                   <th className="px-4 py-5 font-bold border-b border-white/20 text-center">Cores</th>
                   <th className="px-4 py-5 font-bold border-b border-white/20 text-center">Memory</th>
                   <th className="px-4 py-5 font-bold border-b border-white/20 text-center">Storage</th>
@@ -146,7 +126,7 @@ const Pricing = () => {
                     <td className="px-4 py-5 text-center">{plan.cores}</td>
                     <td className="px-4 py-5 text-center">{plan.memory}</td>
                     <td className="px-4 py-5 text-center">{plan.storage}</td>
-                    <td className="px-4 py-5 text-center">Unmetered</td>
+                    <td className="px-4 py-5 text-center">Unmetered: 1 Gbps</td>
                     <td className="px-4 py-5 text-center">{plan.location}</td>
                     <td className="px-4 py-5 text-center">{plan.pricebasic}/mo</td>
                     <td className="px-4 py-5 text-center">
@@ -165,6 +145,7 @@ const Pricing = () => {
             </table>
           </div>
 
+
           {/* Support Section */}
           <div className="mt-8 flex flex-col items-center justify-between rounded-xl bg-primary p-3 md:flex-row">
             <div className="mb-4 flex gap-2 md:mb-0">
@@ -176,18 +157,29 @@ const Pricing = () => {
               <div className="flex flex-col">
                 <h2 className="font-bold">Need help picking a plan?</h2>
                 <p>
-                  Our support team is available to answer any questions you may have.
+                  Our sales team is available to answer any questions you may have.
                 </p>
               </div>
             </div>
-            <Link href="https://billing.lodestone.host/submitticket.php">
+            <Link href="/contact">
               <button className="w-40 rounded-xl bg-teritiary py-4 hover:bg-opacity-0 hover:outline hover:outline-teritiary active:bg-teritiary">
                 Get in Touch
               </button>
             </Link>
           </div>
+
+          <br></br>
+<p className="mt-2 text-center text-xs lg:text-left">
+  *Dedicated servers with standard hardware configurations are provisioned within 48-72 hours.
+</p>
+<p className="mt-2 text-center text-xs lg:text-left">
+  **All dedicated servers and related addons are strictly non-refundable.
+</p>
+
         </div>
       </section>
+
+      
       <section
         className="bg-cover bg-center bg-no-repeat px-6"
         style={{
@@ -198,7 +190,7 @@ const Pricing = () => {
         <div className="container relative mx-auto flex max-w-7xl flex-col gap-6 py-12">
           <div className="flex justify-center">
             <h2 className="text-center text-xl font-bold lg:text-3xl">
-              Dedicated Hosting Features
+              Included With All Plans
             </h2>
           </div>
           <ul className="flex flex-wrap justify-center gap-3">

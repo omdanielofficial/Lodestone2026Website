@@ -1,3 +1,6 @@
+
+
+
 "use client";
 import { useState } from "react";
 import Image from "next/image";
@@ -15,66 +18,84 @@ import {
   faDatabase,
   faServer,
   faCircleExclamation,
-  faLink,
-  faLocationDot,
-  faHandshake,
+  faSackDollar,
   faBoxOpen,
+  faNetworkWired,
+  faCode,
 } from "@fortawesome/free-solid-svg-icons";
 
 const plans = [
   {
-    name: "DISCORD BOT 1GB",
-    memory: "1GB RAM",
-    storage: "10GB",
-    backups: "5GB",
+    name: "BOT 256MB",
+    memory: "256MB RAM",
+    storagebasic: "5GB NVMe",
+    storagepremium: "5GB NVMe",
+    databasesbasic: "1 MySQL Database",
+    databasespremium: "1 MySQL Database",
+    pricebasic: "£0.50",
+    pricepremium: "£0.45",
+    image: "/assets/images/discord-bot-hosting/bot.webp",
+    linkbasic: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/bot-256mb",
+    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/bot-256mb&billingcycle=quarterly",
+    color: "#5765f0",
+  },
+  {
+    name: "BOT 512MB",
+    memory: "512MB RAM",
+    storagebasic: "10GB NVMe",
+    storagepremium: "10GB NVMe",
+    databasesbasic: "1 MySQL Database",
+    databasespremium: "1 MySQL Database",
+    pricebasic: "£1.00",
+    pricepremium: "£0.90",
+    image: "/assets/images/discord-bot-hosting/bot.webp",
+    linkbasic: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/bot-512mb",
+    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/bot-512mb&billingcycle=quarterly",
+    color: "#5765f0",
+  },
+  {
+    name: "BOT 1024MB",
+    memory: "1024MB RAM",
+    storagebasic: "20GB NVMe",
+    storagepremium: "20GB NVMe",
+    databasesbasic: "3 MySQL Databases",
+    databasespremium: "3 MySQL Databases",
     pricebasic: "£2.00",
-    pricepremium: "£2.00",
+    pricepremium: "£1.80",
     image: "/assets/images/discord-bot-hosting/bot.webp",
-    linkbasic: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/discord-bot-1gb",
-    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/discord-bot-1gb",
-    color: "#7289DA",
+    linkbasic: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/bot-1024mb",
+    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/bot-1024mb&billingcycle=quarterly",
+    color: "#5765f0",
   },
   {
-    name: "DISCORD BOT 2GB",
-    memory: "2GB RAM",
-    storage: "20GB",
-    backups: "10GB",
+    name: "BOT 2048MB",
+    memory: "2048MB RAM",
+    storagebasic: "40GB NVMe",
+    storagepremium: "40GB NVMe",
+    databasesbasic: "3 MySQL Databases",
+    databasespremium: "3 MySQL Databases",
     pricebasic: "£4.00",
-    pricepremium: "£4.00",
+    pricepremium: "£3.60",
     image: "/assets/images/discord-bot-hosting/bot.webp",
-    linkbasic: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/discord-bot-2gb",
-    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/discord-bot-2gb",
-    color: "#7289DA",
-  },
-  {
-    name: "DISCORD BOT 4GB",
-    memory: "4GB RAM",
-    storage: "40GB",
-    backups: "20GB",
-    pricebasic: "£8.00",
-    pricepremium: "£8.00",
-    image: "/assets/images/discord-bot-hosting/bot.webp",
-    linkbasic: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/discord-bot-4gb",
-    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/discord-bot-4gb",
-    color: "#7289DA",
+    linkbasic: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/bot-2048mb",
+    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/bot-2048mb&billingcycle=quarterly",
+    color: "#5765f0",
   },
 ];
 
 const features = [
   "99.99% Uptime",
-  "1 Gbps Uplink",
-  "Quick Setup",
-  "Reliable Hardware",
-  "High Performance",
-  "DDoS Protection",
-  "Low Traffic IPs",
-  "Multiple Languages",
-  "Git Support",
-  "Package Installer",
+  "Task Scheduling",
   "Full SFTP Access",
-  "Free MySQL Databases",
-  "Secure Backups",
+  "Unmetered Bandwidth",
   "Instant Setup",
+  "Reliable Hardware",
+  "Free MySQL Databases",
+  "NeoProtect DDoS Protection",
+  "Secure Backups",
+  "Package Installer",
+  "GitHub Support",
+  "Low Traffic IPs",
 ];
 
 const PlanCard = ({ plan, isPremium }: { plan: any; isPremium: boolean }) => (
@@ -90,25 +111,21 @@ const PlanCard = ({ plan, isPremium }: { plan: any; isPremium: boolean }) => (
       <Image src={plan.image} alt={`${plan.name} Plan`} width={75} height={0} />
     </div>
     <ul className="mt-6">
-      <li className="flex items-center gap-2">
+    <li className="flex items-center gap-2">
         <FontAwesomeIcon icon={faHardDrive} className="w-5" />
-        {plan.storage} NVMe Storage
-      </li>
-      <li className="flex items-center gap-2">
-        <FontAwesomeIcon icon={faBoxOpen} className="w-5" />
-        {isPremium ? plan.backups : plan.backups} Backups
+        {isPremium ? plan.storagepremium : plan.storagebasic} Storage
       </li>
       <li className="flex items-center gap-2">
         <FontAwesomeIcon icon={faDatabase} className="w-5" />
-        3 MySQL Databases
+        {isPremium ? plan.databasespremium : plan.databasesbasic} 
       </li>
       <li className="flex items-center gap-2">
-        <FontAwesomeIcon icon={faWifi} className="w-5" />
-        Online 24/7
+        <FontAwesomeIcon icon={faCode} className="w-5" />
+        Node.js / Python / Java
       </li>
     </ul>
     <div className="mt-6 flex items-center justify-between">
-    <div className="flex flex-col">
+      <div className="flex flex-col">
         <span className="text-[12px]">Starting from</span>
         <h3 className="text-xl font-bold">
           {isPremium ? plan.pricepremium : plan.pricebasic}
@@ -142,40 +159,68 @@ const Pricing = () => {
         }}
       >
         <div className="p-10 text-center">
-          <h1 className="mb-4 text-xl font-bold lg:text-3xl">
-            DISCORD BOT HOSTING
-          </h1>
-          <p className="w-full text-lg md:w-[700px]">
-          Get your Discord bot up and running in minutes with Lodestone, hosted on high-performance hardware and with support for <b>Node.js, Python, and Java</b>.
-          </p>
+        <h1 className="mb-1 text-xl font-bold lg:text-3xl">
+  DISCORD BOT HOSTING
+</h1>
+<p className="mb-4 text-sm font-semibold opacity-80 lg:text-base">
+  NODE.JS / PYTHON / JAVA
+</p>
+<p className="w-full text-lg md:w-[700px]">
+ Host a Discord bot with blazing fast performance, one-click setup, and 24/7 uptime. Choose from multiple languages and explore features built for developers.
+
+</p>
+
         </div>
       </section>
       <section className="overflow-hidden bg-secondary p-5 lg:p-16">
         <div className="container mx-auto max-w-7xl">
           <div className="flex flex-col items-center justify-between rounded-xl bg-primary p-3 md:flex-row">
- 
+
             <div className="flex flex-col items-center gap-4 text-center md:flex-row">
               <div className="mb-2 flex items-center gap-1 md:mb-0">
-                <FontAwesomeIcon icon={faMicrochip} className="w-5" />{" "}
-                <strong>{isPremium ? "AMD Ryzen 9 5950X" : "AMD Ryzen 9 5950X"}</strong>
+                <FontAwesomeIcon icon={faMicrochip} className="w-5" /> Ryzen 9 9950X{" "}
+                {isPremium ? "" : ""}
               </div>
               <div className="mb-2 flex items-center gap-1 md:mb-0">
-                <FontAwesomeIcon icon={faMemory} className="w-5" />{" "}
-                {isPremium ? "DDR4 RAM" : "DDR4 RAM"}
+                <FontAwesomeIcon icon={faMemory} className="w-5" /> DDR5 RAM{" "}
+                {isPremium ? "" : ""}
               </div>
               <div className="flex items-center gap-1">
-                <FontAwesomeIcon icon={faShield} className="w-5" />{" "}
+                <FontAwesomeIcon icon={faShield} className="w-5" /> DDoS Protection{" "}
                 {isPremium
-                  ? "DDoS Protection"
-                  : "DDoS Protection"}
+                  ? ""
+                  : ""}
               </div>
             </div>
+<div className="mb-4 flex flex-row gap-1 text-center md:mb-0">
+  {[
+    { key: "basic", label: "Monthly" },
+    { key: "premium", label: "Quarterly (-10%)" },
+  ].map(({ key, label }) => {
+    const isActive = (key === "premium") === isPremium;
+    return (
+      <button
+        key={key}
+        className={`w-40 rounded-xl py-4 hover:cursor-pointer ${
+          isActive
+            ? "bg-secondary"
+            : "bg-none hover:outline hover:outline-teritiary"
+        }`}
+        onClick={() => setIsPremium(key === "premium")}
+      >
+        {label}
+      </button>
+    );
+  })}
+</div>
+        
           </div>
-          <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-3">
-            {plans.map((plan) => (
-              <PlanCard key={plan.name} plan={plan} isPremium={isPremium} />
-            ))}
-          </div>
+<div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+  {plans.map((plan) => (
+    <PlanCard key={plan.name} plan={plan} isPremium={isPremium} />
+  ))}
+</div>
+
 
           <div className="mt-5 flex flex-col items-center justify-between rounded-xl bg-primary p-3 md:flex-row">
             <div className="mb-4 flex gap-2 md:mb-0">
@@ -187,33 +232,35 @@ const Pricing = () => {
               <div className="flex flex-col">
                 <h2 className="font-bold">Need help picking a plan?</h2>
                 <p>
-                  Our support team is available to answer any questions you may
+                  Our sales team is available to answer any questions you may
                   have.
                 </p>
               </div>
             </div>
-            <Link href="https://billing.lodestone.host/submitticket.php">
+            <Link href="/contact">
               <button className="w-40 rounded-xl bg-teritiary py-4 hover:bg-opacity-0 hover:outline hover:outline-teritiary active:bg-teritiary">
                 Get in Touch
               </button>
             </Link>
           </div>
+
+
+
+
         </div>
       </section>
       <section
         className="bg-cover bg-center bg-no-repeat px-6"
         style={{
-          backgroundImage: `linear-gradient(164deg, rgba(124, 58, 237, 0.9) 11.33%, rgba(124, 58, 237, 0.9) 88.67%), 
-        url('/assets/images/games/minecraft-server-hosting/features.webp')`,
+          backgroundImage: `linear-gradient(164deg, rgba(124, 58, 237, 0.9) 11.33%, rgba(124, 58, 237, 0.9) 88.67%)`,
         }}
       >
         <div className="container relative mx-auto flex max-w-7xl flex-col gap-6 py-12">
           <div className="flex justify-center">
             <h2 className="text-center text-xl font-bold lg:text-3xl">
-              Discord Bot Hosting Features
+              Included With All Plans
             </h2>
-          </div>
-
+          </div>  
           <ul className="flex flex-wrap justify-center gap-3">
             {features.map((feature) => (
               <li
@@ -242,3 +289,4 @@ const Pricing = () => {
   );
 };
 export default Pricing;
+

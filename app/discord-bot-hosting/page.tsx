@@ -2,20 +2,20 @@ import Pricing from "@/app/discord-bot-hosting/pricing";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Lodestone | Discord Bot Hosting",
+  title: "Lodestone - Discord Bot Hosting",
   description:
-    "Host your Discord bots built with Node.js, Python, or Java effortlessly at Lodestone. Experience reliable performance, scalable hosting plans, and advanced features tailored for developers to create and manage powerful Discord bots.",
+    "Deploy your Discord bot in minutes and keep it running 24/7 on our reliable hosting services. Plans start at £0.50!",
   keywords:
-    "Discord Bot Hosting, Node.js Discord Bot Hosting, Python Discord Bot Hosting, Java Discord Bot Hosting, Lodestone Hosting, Hosting for Discord Bots, Scalable Bot Hosting Solutions,",
+    "discord bot hosting, bot hosting, cheap discord bot hosting, 9950x bot hosting, nodejs hosting, python hosting, java hosting",
   openGraph: {
-    title: "Lodestone | Discord Bot Hosting",
+    title: "Lodestone - Discord Bot Hosting",
     description:
-    "Host your Discord bots built with Node.js, Python, or Java effortlessly at Lodestone. Experience reliable performance, scalable hosting plans, and advanced features tailored for developers to create and manage powerful Discord bots.",
+    "Deploy your Discord bot in minutes and keep it running 24/7 on our reliable hosting services. Plans start at £0.50!",
   },
   twitter: {
-    title: "Lodestone | Discord Bot Hosting",
+    title: "Lodestone - Discord Bot Hosting",
     description:
-    "Host your Discord bots built with Node.js, Python, or Java effortlessly at Lodestone. Experience reliable performance, scalable hosting plans, and advanced features tailored for developers to create and manage powerful Discord bots.",
+    "Deploy your Discord bot in minutes and keep it running 24/7 on our reliable hosting services. Plans start at £0.50!",
   },
 };
 

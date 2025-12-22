@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Craft, build and battle bosses on our Ryzen 9 9950X Minecraft server hosting. Enjoy full mod support, unlimited slots, NVMe storage, and bandwidth. Plans start at just £3.00.",
   keywords:
-    "minecraft server, minecraft servers, create minecraft server, 247 minecraft server",
+    "minecraft, minecraft hosting, java hosting, geysermc hosting, 9950x hosting, game hosting, minecraft servers, budget minecraft hosting",
   openGraph: {
     title: "Lodestone - Minecraft Hosting",
     description:

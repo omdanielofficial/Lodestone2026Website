@@ -37,7 +37,7 @@ const plans = [
     pricepremium: "£2.70",
     image: "/assets/images/minecraft-hosting/coal.webp",
     linkbasic: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/coal",
-    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/coal",
+    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/coal&billingcycle=quarterly",
     color: "#474747",
   },
   {
@@ -53,7 +53,7 @@ const plans = [
     pricepremium: "£5.40",
     image: "/assets/images/minecraft-hosting/iron.webp",
     linkbasic: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/iron",
-    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/iron",
+    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/iron&billingcycle=quarterly",
     color: "#FCB577",
   },
   {
@@ -69,7 +69,7 @@ const plans = [
     pricepremium: "£8.10",
     image: "/assets/images/minecraft-hosting/gold.webp",
     linkbasic: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/gold",
-    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/gold",
+    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/gold&billingcycle=quarterly",
     color: "#DECD2E",
   },
   {
@@ -85,7 +85,7 @@ const plans = [
     pricepremium: "£10.80",
     image: "/assets/images/minecraft-hosting/lapis.webp",
     linkbasic: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/lapis",
-    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/lapis",
+    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/lapis&billingcycle=quarterly",
     color: "#0063CD",
   },
   {
@@ -101,7 +101,7 @@ const plans = [
     pricepremium: "£16.20",
     image: "/assets/images/minecraft-hosting/diamond.webp",
     linkbasic: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/diamond",
-    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/diamond",
+    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/diamond&billingcycle=quarterly",
     color: "#1DCDE2",
   },
   {
@@ -117,7 +117,7 @@ const plans = [
     pricepremium: "£21.60",
     image: "/assets/images/minecraft-hosting/emerald.webp",
     linkbasic: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/emerald",
-    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/emerald",
+    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/emerald&billingcycle=quarterly",
     color: "#65E185",
   },
   {
@@ -133,7 +133,7 @@ const plans = [
     pricepremium: "£32.40",
     image: "/assets/images/minecraft-hosting/amethyst.webp",
     linkbasic: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/amethyst",
-    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/amethyst",
+    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/amethyst&billingcycle=quarterly",
     color: "#BD4CD8",
   },
   {
@@ -149,7 +149,7 @@ const plans = [
     pricepremium: "£43.20",
     image: "/assets/images/minecraft-hosting/beacon.webp",
     linkbasic: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/beacon",
-    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/beacon",
+    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/beacon&billingcycle=quarterly",
     color: "#09A9D7",
   },
 ];
