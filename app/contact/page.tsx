@@ -64,7 +64,7 @@ const Contact = () => {
         <div className="p-10 text-center">
           <h1 className="mb-4 text-xl font-bold lg:text-3xl">Contact Us</h1>
           <p className="w-full text-gray-300 md:w-[700px]">
-            Any questions or concerns? Don't hesitate to get in touch! Our experienced team is available around the clock to assist customers with all kinds of enquiries.
+            Any questions or concerns? Don&apos;t hesitate to get in touch! Our experienced team is available around the clock to assist customers with all kinds of enquiries.
           </p>
         </div>
       </section>
