@@ -1,0 +1,15 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/minecraft-hosting/page": "/minecraft-hosting",
+  "/about-us/page": "/about-us",
+  "/page": "/",
+  "/dedicated-servers/page": "/dedicated-servers",
+  "/hytale-hosting/page": "/hytale-hosting",
+  "/game-hosting/page": "/game-hosting",
+  "/discord-bot-hosting/page": "/discord-bot-hosting",
+  "/contact/page": "/contact",
+  "/sitemap/page": "/sitemap",
+  "/vps-hosting-dev/page": "/vps-hosting-dev",
+  "/tos-dev/page": "/tos-dev"
+}

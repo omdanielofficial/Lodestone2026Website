@@ -115,7 +115,7 @@ const Footer = () => {
               />
             </div>
             <p id="about-us" className="mt-2 text-center text-sm lg:text-left">
-            Lodestone provides powerful, reliable, and affordable game hosting across the world. Whether you're hosting a server for a few friends or a large community, you can trust us to maintain performance and uptime.
+            Lodestone provides powerful, reliable, and affordable game hosting across the world. Whether you&apos;re hosting a server for a few friends or a large community, you can trust us to maintain performance and uptime.
             </p>
             <p id="business-details" className="mt-2 text-center text-xs lg:text-left">
               &copy; {new Date().getFullYear()}{" "}   <a 
