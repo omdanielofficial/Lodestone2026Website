@@ -4,7 +4,7 @@
 type AppRoutes = "/" | "/about-us" | "/contact" | "/dedicated-servers" | "/discord-bot-hosting" | "/game-hosting" | "/hytale-hosting" | "/minecraft-hosting" | "/sitemap" | "/tos-dev"
 type PageRoutes = never
 type LayoutRoutes = "/"
-type RedirectRoutes = "/customer-feedback" | "/hytale" | "/knowledgebase" | "/minecraft" | "/privacy-policy" | "/service-level-agreement" | "/tebex" | "/terms-of-service"
+type RedirectRoutes = "/customer-feedback" | "/hytale" | "/minecraft" | "/privacy-policy" | "/service-level-agreement" | "/tebex" | "/terms-of-service"
 type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes
 
@@ -19,7 +19,6 @@ interface ParamMap {
   "/game-hosting": {}
   "/hytale": {}
   "/hytale-hosting": {}
-  "/knowledgebase": {}
   "/minecraft": {}
   "/minecraft-hosting": {}
   "/privacy-policy": {}

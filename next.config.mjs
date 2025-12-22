@@ -43,17 +43,12 @@ const nextConfig = {
       },
       {
         source: "/minecraft",
-        destination: "/minecraft-hosting", // change this
+        destination: "https://lodestone.host/minecraft-hosting", // change this
         permanent: true,
       },
       {
         source: "/hytale",
-        destination: "/hytale-hosting", // change this
-        permanent: true,
-      },
-      {
-        source: "/knowledgebase",
-        destination: "https://lodestone-technologies.gitbook.io/knowledgebase", // change this
+        destination: "https://lodestone.host/hytale-hosting", // change this
         permanent: true,
       },
     ];
