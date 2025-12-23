@@ -35,7 +35,7 @@ const features = [
     ),
     title: "24/7 Support",
     description:
-      "Our experienced support team is available around the clock to assist you, simply open a ticket and we'll be on the case.",
+      "Our experienced support team is available around the clock to assist you - simply open a ticket and we'll be on the case.",
   },
   {
     icon: (
@@ -54,7 +54,7 @@ const features = [
     ),
     title: "DDoS Protection",
     description:
-      "Keep your servers online with enterprise-grade NeoProtect protection, including network filtering and protection layers.",
+      "Keep your servers online with enterprise-grade NeoProtect mitigation, including network filtering and protection layers.",
   },
   {
     icon: (
