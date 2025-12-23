@@ -4,13 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBook,
-  faCircleInfo,
-  faGamepad,
-  faHandshake,
-  faLock,
-  faPhone,
-  faWifi,
   faRightToBracket,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -19,6 +12,7 @@ const menuItems = [
   { name: "Hytale", href: "/hytale-hosting" },
   {
     name: "Game Hosting",
+    key: "gameHosting", // stable key
     href: "/game-hosting",
     subItems: [
       {
@@ -79,6 +73,7 @@ const menuItems = [
   },
   {
     name: "More Services",
+    key: "otherServices", // stable key
     href: "/",
     subItems: [
       {
@@ -93,37 +88,32 @@ const menuItems = [
   },
 ];
 
-
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  // Rename submenu state variables to reflect their new labels
   const [isGameHostingSubmenuOpen, setIsGameHostingSubmenuOpen] = useState(false);
   const [isOtherServicesSubmenuOpen, setIsOtherServicesSubmenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen((prev) => !prev);
   };
 
-  // Updated function to toggle based on submenu key
-  const toggleSubmenuMobile = (submenu: string) => {
-    if (window.innerWidth < 640) {
-      if (submenu === "gameHosting") {
-        setIsGameHostingSubmenuOpen(!isGameHostingSubmenuOpen);
-      } else if (submenu === "otherServices") {
-        setIsOtherServicesSubmenuOpen(!isOtherServicesSubmenuOpen);
-      }
+  // Use a stable key so we don't rely on the display name
+  const toggleSubmenu = (key: "gameHosting" | "otherServices") => {
+    if (key === "gameHosting") {
+      setIsGameHostingSubmenuOpen((prev) => !prev);
+    } else {
+      setIsOtherServicesSubmenuOpen((prev) => !prev);
     }
   };
 
-  // The rendering logic below uses the updated state names.
-  // For clarity, here are the main points:
-  // - Desktop: first submenu item triggers "Game Hosting" and shows its grid
-  // - Desktop: second submenu item triggers "Other Services" and shows its grid
-  // - Mobile: same behavior controlled by isGameHostingSubmenuOpen / isOtherServicesSubmenuOpen
+  const isSubmenuOpen = (key: "gameHosting" | "otherServices") => {
+    return key === "gameHosting" ? isGameHostingSubmenuOpen : isOtherServicesSubmenuOpen;
+  };
 
   return (
     <nav className="sticky top-0 z-50 border-b border-teritiary bg-primary px-5 shadow-sm">
       <div className="relative mx-auto flex h-16 max-w-7xl items-center justify-between">
+        {/* Left: Logo + Desktop Nav */}
         <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
           <div className="flex-shrink-0">
             <Link href="/">
@@ -136,16 +126,13 @@ const Navbar = () => {
             </Link>
           </div>
 
+          {/* Desktop menu */}
           <div className="hidden items-center font-bold sm:ml-6 sm:flex sm:space-x-4">
             {menuItems.map((item) =>
               item.subItems ? (
                 <div key={item.name} className="group relative">
                   <button
-                    onClick={() =>
-                      toggleSubmenuMobile(
-                        item.name === "Game Hosting" ? "gameHosting" : "otherServices"
-                      )
-                    }
+                    onClick={() => toggleSubmenu(item.key as "gameHosting" | "otherServices")}
                     className="flex items-center rounded-md px-3 py-2 text-sm hover:bg-secondary hover:text-white focus:outline-none"
                   >
                     {item.name}
@@ -162,21 +149,19 @@ const Navbar = () => {
 
                   <div
                     className={`pointer-events-none absolute left-0 z-10 rounded-md border border-primary bg-secondary opacity-0 shadow-md transition-opacity group-hover:pointer-events-auto group-hover:opacity-100 ${
-                      item.name === "Game Hosting" && isGameHostingSubmenuOpen
+                      isSubmenuOpen(item.key as "gameHosting" | "otherServices")
                         ? "pointer-events-auto opacity-100"
-                        : item.name === "Other Services" && isOtherServicesSubmenuOpen
-                          ? "pointer-events-auto opacity-100"
-                          : "sm:pointer-events-none sm:opacity-0"
+                        : "sm:pointer-events-none sm:opacity-0"
                     }`}
                   >
                     <div
                       className={`grid p-4 ${
-                        item.name === "Game Hosting"
+                        item.key === "gameHosting"
                           ? "w-[50rem] grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
                           : "w-48 grid-cols-1"
                       }`}
                     >
-                      {item.subItems.map((subItem) =>
+                      {item.subItems.map((subItem: any) =>
                         "subtitle" in subItem ? (
                           <Link
                             key={subItem.title}
@@ -206,20 +191,25 @@ const Navbar = () => {
                             {subItem.icon}
                             <div className="text-sm font-normal">{subItem.title}</div>
                           </Link>
-                        ),
+                        )
                       )}
                     </div>
                   </div>
                 </div>
               ) : (
-                <Link key={item.name} href={item.href || "/"} className="rounded-md px-3 py-2 text-sm hover:bg-secondary hover:text-white">
+                <Link
+                  key={item.name}
+                  href={item.href || "/"}
+                  className="rounded-md px-3 py-2 text-sm hover:bg-secondary hover:text-white"
+                >
                   {item.name}
                 </Link>
-              ),
+              )
             )}
           </div>
         </div>
 
+        {/* Desktop client portal button */}
         <Link
           href="https://billing.lodestone.host"
           className="hidden items-center gap-2 rounded-md bg-violet-600 px-4 py-2 font-semibold text-white hover:bg-violet-700 active:bg-violet-600 lg:flex"
@@ -228,6 +218,7 @@ const Navbar = () => {
           Client Portal
         </Link>
 
+        {/* Mobile burger */}
         <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
           <button
             onClick={toggleMobileMenu}
@@ -250,6 +241,7 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Mobile menu */}
       {isMobileMenuOpen && (
         <div className="sm:hidden" id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2">
@@ -257,21 +249,13 @@ const Navbar = () => {
               item.subItems ? (
                 <div key={item.name} className="relative">
                   <button
-                    onClick={() =>
-                      toggleSubmenuMobile(
-                        item.name === "Game Hosting" ? "gameHosting" : "otherServices"
-                      )
-                    }
+                    onClick={() => toggleSubmenu(item.key as "gameHosting" | "otherServices")}
                     className="flex w-full items-center rounded-md px-3 py-2 text-left hover:bg-secondary hover:text-white"
                   >
                     {item.name}
                     <svg
                       className={`ml-2 h-5 w-5 transform transition-transform duration-200 ${
-                        item.name === "Game Hosting" && isGameHostingSubmenuOpen
-                          ? "rotate-180"
-                          : item.name === "Other Services" && isOtherServicesSubmenuOpen
-                          ? "rotate-180"
-                          : ""
+                        isSubmenuOpen(item.key as "gameHosting" | "otherServices") ? "rotate-180" : ""
                       }`}
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -282,16 +266,15 @@ const Navbar = () => {
                     </svg>
                   </button>
 
-                  {(item.name === "Game Hosting" && isGameHostingSubmenuOpen) ||
-                  (item.name === "Other Services" && isOtherServicesSubmenuOpen) ? (
+                  {isSubmenuOpen(item.key as "gameHosting" | "otherServices") && (
                     <div
                       className={`grid gap-4 p-4 ${
-                        item.name === "Game Hosting"
+                        item.key === "gameHosting"
                           ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
                           : "grid-cols-1"
                       }`}
                     >
-                      {item.subItems.map((subItem) =>
+                      {item.subItems.map((subItem: any) =>
                         "subtitle" in subItem ? (
                           <Link
                             key={subItem.title}
@@ -319,18 +302,26 @@ const Navbar = () => {
                             {subItem.icon}
                             <div className="text-sm">{subItem.title}</div>
                           </Link>
-                        ),
+                        )
                       )}
                     </div>
-                  ) : null}
+                  )}
                 </div>
               ) : (
-                <Link key={item.name} href={item.href || "/"} className="block rounded-md px-3 py-2 hover:bg-secondary hover:text-white">
+                <Link
+                  key={item.name}
+                  href={item.href || "/"}
+                  className="block rounded-md px-3 py-2 hover:bg-secondary hover:text-white"
+                >
                   {item.name}
                 </Link>
-              ),
+              )
             )}
-            <Link href="/" className="block rounded-md bg-secondary px-3 py-2 text-center text-white hover:opacity-80">
+
+            <Link
+              href="https://billing.lodestone.host"
+              className="block rounded-md bg-secondary px-3 py-2 text-center text-white hover:opacity-80"
+            >
               Client Portal
             </Link>
           </div>

@@ -166,7 +166,7 @@ const Pricing = () => {
   NODE.JS / PYTHON / JAVA
 </p>
 <p className="w-full text-lg md:w-[700px]">
- Host a Discord bot with blazing fast performance, one-click setup, and 24/7 uptime. Choose from multiple languages and explore features built for developers.
+ Host a Discord bot with blazing fast performance, one-click setup, and 24/7 uptime. Choose from multiple languages and explore features built for developers, such as our package manager and task scheduling.
 
 </p>
 
@@ -192,7 +192,7 @@ const Pricing = () => {
                   : ""}
               </div>
             </div>
-<div className="mb-4 flex flex-row gap-1 text-center md:mb-0">
+<div className="mb-4 flex flex-col gap-2 text-center md:mb-0 md:flex-row">
   {[
     { key: "basic", label: "Monthly" },
     { key: "premium", label: "Quarterly (-10%)" },

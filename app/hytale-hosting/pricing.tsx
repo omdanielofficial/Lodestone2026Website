@@ -1,28 +1,8 @@
 "use client";
+
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGear,
-  faHardDrive,
-  faHeadset,
-  faMemory,
-  faMicrochip,
-  faShield,
-  faWifi,
-  faUsers,
-  faDatabase,
-  faServer,
-  faCircleExclamation,
-  faSackDollar,
-  faBoxOpen,
-  faNetworkWired,
-} from "@fortawesome/free-solid-svg-icons";
-
-/* 
-const plans = [ ... ];
-*/
 
 const features = [
   "Mod Support",
@@ -43,12 +23,6 @@ const features = [
   "More Advanced Features",
 ];
 
-/*
-const PlanCard = ({ plan, isPremium }: { plan: any; isPremium: boolean }) => (
-  ...
-);
-*/
-
 const Pricing = () => {
   const [isPremium, setIsPremium] = useState(false);
 
@@ -61,12 +35,14 @@ const Pricing = () => {
           backgroundImage: `radial-gradient(closest-side, rgba(35, 39, 46, 0.7), #23272E), url('/assets/images/hytale-hosting/banner.jpg')`,
         }}
       >
-        <div className="p-10 text-center text-white">
-          <h1 className="mb-1 text-xl font-bold lg:text-3xl">HYTALE HOSTING</h1>
+        <div className="px-6 py-10 text-center text-white md:px-10">
+          <h1 className="mb-1 text-xl font-bold lg:text-3xl">
+            HYTALE HOSTING
+          </h1>
           <p className="mb-4 text-sm font-semibold opacity-80 lg:text-base">
             COMING SOON
           </p>
-          <p className="w-full text-lg md:w-[700px]">
+          <p className="mx-auto w-full text-base md:w-[700px] md:text-lg">
             Create your ultimate Hytale experience with our server hosting.
             Enjoy instant setup and seamless gameplay as you build, explore, and
             adventure with friends.
@@ -74,57 +50,68 @@ const Pricing = () => {
         </div>
       </section>
 
-<section className="overflow-hidden bg-secondary p-5 lg:p-16">
-  <div className="container mx-auto max-w-7xl">
-    <div className="flex flex-col gap-5">
-      {/* HELP PICKING A PLAN */}
-      <div className="flex flex-col items-center justify-between gap-4 rounded-xl bg-primary p-6 md:flex-row">
-        <div className="mb-4 flex gap-3 md:mb-0 md:items-center">
-          <img 
-            src="/assets/images/hytale-hosting/hytale-icon.png" 
-            alt="Hytale" 
-            className="h-32 w-auto object-contain text-blue-500"
-          />
-          <div className="flex flex-col">
-            <h2 className="font-bold text-lg">Hytale is releasing on 13th January 2026!</h2>
-            <p className="opacity-90">We will fully support Hytale server hosting once it releases in early access.</p>
-            <p className="opacity-90">Please check back soon for more information.</p>
+      {/* MAIN SECTION */}
+      <section className="overflow-hidden bg-secondary p-5 lg:p-16">
+        <div className="container mx-auto max-w-7xl">
+          <div className="flex flex-col gap-5">
+            {/* HELP PICKING A PLAN / HYTALE INFO */}
+            <div className="flex flex-col items-center justify-between gap-4 rounded-xl bg-primary p-6 md:flex-row">
+              <div className="flex w-full flex-col items-center gap-3 text-center md:w-auto md:flex-row md:items-center md:text-left">
+                <img
+                  src="/assets/images/hytale-hosting/hytale-icon.png"
+                  alt="Hytale"
+                  className="h-20 w-auto max-w-full md:h-24"
+                />
+                <div className="flex flex-col gap-1">
+                  <h2 className="text-base font-bold md:text-lg">
+                    Hytale is releasing on 13th January 2026!
+                  </h2>
+                  <p className="text-sm opacity-90 md:text-base">
+                    We will fully support Hytale server hosting once it releases
+                    in early access.
+                  </p>
+                  <p className="text-sm opacity-90 md:text-base">
+                    Please check back soon for more information.
+                  </p>
+                </div>
+              </div>
+
+              <div className="w-full md:w-auto">
+                <Link href="https://discord.gg/lodestonehost">
+                  <button className="w-full rounded-xl bg-teritiary py-3 text-sm font-semibold hover:bg-opacity-0 hover:outline hover:outline-teritiary active:bg-teritiary md:w-40">
+                    Get Notified
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            {/* VIDEO EMBED SECTION */}
+            <div className="flex flex-col items-center gap-6 rounded-xl bg-gradient-to-br from-primary/20 to-secondary/50 p-6 md:p-12">
+              <div className="aspect-video w-full max-w-4xl overflow-hidden rounded-2xl shadow-2xl shadow-black/30">
+                <iframe
+                  src="https://www.youtube.com/embed/o77MzDQT1cg"
+                  title="Hytale Official Trailer"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  className="h-full w-full"
+                  allowFullScreen
+                />
+              </div>
+
+              <div className="px-2 text-center text-white/80">
+                <p className="text-sm opacity-80 md:text-base">
+                  Hytale is a sandbox RPG that blends block-based building with
+                  deep exploration, combat, and story-driven gameplay.
+                </p>
+                <p className="text-sm opacity-80 md:text-base">
+                  Looking to pre-order a server? Please get in touch with us to
+                  enquire!
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-            <Link href="https://discord.gg/lodestonehost">
-              <button className="w-40 rounded-xl bg-teritiary py-4 hover:bg-opacity-0 hover:outline hover:outline-teritiary active:bg-teritiary">
-                Get Notified
-              </button>
-            </Link>
-      </div>
-
-      {/* VIDEO EMBED SECTION */}
-      <div className="flex flex-col items-center gap-6 rounded-xl bg-gradient-to-br from-primary/20 to-secondary/50 p-8 md:p-12">
-        
-        <div className="w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-black/30">
-          <iframe
-            src="https://www.youtube.com/embed/o77MzDQT1cg"
-            title="Hytale Official Trailer"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            className="w-full h-full"
-            allowFullScreen
-          ></iframe>
-        </div>
-
-        <div className="text-center">
-          <p className="opacity-80 text-sm md:text-base text-white/80">
-Hytale is a sandbox RPG that blends block-based building with deep exploration, combat, and story-driven gameplay. 
-          </p>
-          <p className="opacity-80 text-sm md:text-base text-white/80">
-Looking to pre-order a server? Please get in touch with us to enquire! 
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       {/* FEATURES SECTION */}
       <section
@@ -157,6 +144,7 @@ Looking to pre-order a server? Please get in touch with us to enquire!
             className="-z-1 absolute -right-80 bottom-0 hidden -translate-x-full 2xl:block"
             priority
           />
+
           <ul className="flex flex-wrap justify-center gap-3">
             {features.map((feature) => (
               <li

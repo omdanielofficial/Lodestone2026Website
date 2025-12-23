@@ -1,4 +1,14 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/hytale-hosting/page": "app/hytale-hosting/page.js",
+  "/dedicated-servers/page": "app/dedicated-servers/page.js",
+  "/discord-bot-hosting/page": "app/discord-bot-hosting/page.js",
+  "/game-hosting/page": "app/game-hosting/page.js",
+  "/minecraft-hosting/page": "app/minecraft-hosting/page.js",
+  "/sitemap/page": "app/sitemap/page.js",
+  "/tos-dev/page": "app/tos-dev/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/about-us/page": "app/about-us/page.js"
 }

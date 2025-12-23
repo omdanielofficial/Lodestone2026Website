@@ -93,7 +93,7 @@ const Pricing = () => {
   LINUX & WINDOWS SUPPORTED
   </p>
           <p className="w-full text-lg md:w-[700px]">
-            Bare metal dedicated servers with the latest AMD Ryzen CPUs, NVMe storage, and full root access. Perfect for large game servers and resource-intensive applications.
+            Bare metal dedicated servers with the latest AMD Ryzen CPUs, NVMe storage, and full root access. Perfect for large game servers and resource-intensive applications that need more performance.
           </p>
         </div>
       </section>
