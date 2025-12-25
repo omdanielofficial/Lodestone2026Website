@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Lodestone | Sitemap",
+  title: "Lodestone - Sitemap",
   description:
   "Providing powerful, reliable, and affordable game hosting across the world. Whether you're hosting a server for a few friends or a large community, you can trust us to maintain performance and uptime.",
   keywords:
   "game server hosting, Minecraft hosting, web hosting, game hosting, 99.99% uptime, cheap Minecraft hosting, high-performance hosting, 24/7 support, affordable hosting plans, lodestone",
   openGraph: {
-    title: "Lodestone | Sitemap",
+    title: "Lodestone - Sitemap",
     description:
       "Providing powerful, reliable, and affordable game hosting across the world. Whether you're hosting a server for a few friends or a large community, you can trust us to maintain performance and uptime.",
     type: "website",
@@ -25,14 +25,12 @@ const Sitemap = () => {
   const sitemaps = [
     { name: "Homepage", url: "/" },
     { name: "Minecraft Hosting", url: "/minecraft-hosting" },
+    { name: "Hytale Hosting", url: "/minecraft-hosting" },
     { name: "Game Hosting", url: "/game-hosting" },
-    { name: "Virtual Private Servers", url: "/vps-hosting" },
-    { name: "Dedicated Servers", url: "/dedicated-hosting" },
-    { name: "About Us", url: "/about" },
+    { name: "Discord Bot Hosting", url: "/discord-bot-hosting" },
+    { name: "Dedicated Servers", url: "/dedicated-servers" },
+    { name: "About Us", url: "/about-us" },
     { name: "Contact", url: "/contact" },
-    { name: "Terms of Service", url: "/terms-of-service" },
-    { name: "Privacy Policy", url: "/privacy-policy" },
-    { name: "Service Level Agreement", url: "/service-level-agreement" }, 
   ];
 
   return (
