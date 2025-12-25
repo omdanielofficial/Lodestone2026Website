@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const features = [
   {
     icon: (
@@ -156,6 +158,38 @@ const WhyChooseUs = () => {
               </div>
             ))}
           </div>
+
+{/* HELP PICKING A PLAN / HYTALE INFO */}
+<div className="mx-auto mt-8 max-w-5xl px-4">
+  <div className="flex flex-col items-center justify-between gap-4 rounded-xl bg-primary p-6 md:flex-row">
+    <div className="flex w-full flex-col items-center gap-3 text-center md:w-auto md:flex-row md:items-center md:text-left">
+      <img
+        src="/assets/images/hytale-hosting/hytale-icon.png"
+        alt="Hytale"
+        className="h-20 w-auto max-w-full md:h-24"
+      />
+      <div className="flex flex-col gap-1">
+        <h2 className="text-base font-bold md:text-lg">
+          Hytale is releasing on 13th January 2026!
+        </h2>
+        <p className="text-sm opacity-90 md:text-base">
+          Lodestone will fully support Hytale server hosting once it releases
+          in early access.
+        </p>
+      </div>
+    </div>
+
+    <div className="w-full md:w-auto">
+      <Link href="/hytale-hosting">
+        <button className="w-full rounded-xl bg-teritiary py-3 text-sm font-semibold hover:bg-opacity-0 hover:outline hover:outline-teritiary active:bg-teritiary md:w-40">
+          Learn More
+        </button>
+      </Link>
+    </div>
+  </div>
+</div>
+
+
         </div>
       </section>
     </>
