@@ -31,6 +31,8 @@ const Sitemap = () => {
     { name: "Dedicated Servers", url: "/dedicated-servers" },
     { name: "About Us", url: "/about-us" },
     { name: "Contact", url: "/contact" },
+    { name: "Partner Program", url: "/partners" },
+    { name: "Hardware & Locations", url: "/hardware" },
   ];
 
   return (

@@ -67,7 +67,7 @@ export default function About() {
               {
                 name: "Peyton Barbour",
                 role: "Head of Operations",
-                image: "/assets/images/about-us/anonymous.png",
+                image: "/assets/images/about-us/anonymous.jpg",
               },
               {
                 name: "Ethan Wheeler",
@@ -85,9 +85,14 @@ export default function About() {
                 image: "/assets/images/about-us/rahul-bakshi.png",
               },
               {
+                name: "Riley Kent",
+                role: "Support Representative",
+                image: "/assets/images/about-us/riley-kent.webp",
+              },
+              {
                 name: "Zakaria Mokran",
                 role: "Sales Associate",
-                image: "/assets/images/about-us/anonymous.png",
+                image: "/assets/images/about-us/anonymous.jpg",
               },
             ].map((member, i) => (
               <div key={i} className="flex flex-col items-center text-center">

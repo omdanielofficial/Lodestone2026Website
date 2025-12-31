@@ -44,7 +44,7 @@ const Promo = () => {
                 <p>{isCopied ? "COPIED ✓" : "XMAS25"}</p>
               </div>
               <p>
-                <span className="font-bold">Christmas Sale:</span> Get 25% off your first 3 months on your next purchase until 3rd Jan 2026!
+                <span className="font-bold">Christmas Sale:</span> Get 25% off the first 3 months on your next purchase until 3rd Jan 2026!
               </p>
             </div>
             <FontAwesomeIcon

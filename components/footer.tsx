@@ -26,11 +26,13 @@ const Footer = () => {
       category: "Company",
       items: [
         { name: "About Us", url: "/about-us" },
+        { name: "Contact", url: "/contact" },
         { name: "Blog", url: "https://blog.lodestone.host" },
         {
-          name: "Affiliate Program",
-          url: "https://billing.lodestone.host/affiliates.php",
+          name: "Partner Program",
+          url: "/partners",
         },
+        { name: "Hardware & Locations", url: "/hardware" },
         { name: "Careers", url: "https://intranex.org" },
       ],
     },

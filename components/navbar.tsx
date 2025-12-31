@@ -17,7 +17,7 @@ const menuItems = [
     subItems: [
       {
         title: "Minecraft",
-        subtitle: "Starting from £3.00",
+        subtitle: "Starting from £2.50",
         href: "/minecraft-hosting",
         imageSrc: "/assets/images/navbar/games-minecraft.webp",
       },
@@ -30,37 +30,37 @@ const menuItems = [
       {
         title: "Palworld",
         subtitle: "Starting from £12.00",
-        href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/palworld",
+        href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/",
         imageSrc: "/assets/images/navbar/games-palworld.webp",
       },
       {
         title: "Rust",
         subtitle: "Starting from £9.00",
-        href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/rust",
+        href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/",
         imageSrc: "/assets/images/navbar/games-rust.webp",
       },
       {
         title: "Valheim",
         subtitle: "Starting from £6.00",
-        href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/valheim",
+        href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/",
         imageSrc: "/assets/images/navbar/games-valheim.webp",
       },
       {
         title: "Counter-Strike 2",
         subtitle: "Starting from £9.00",
-        href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/cs2",
+        href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/",
         imageSrc: "/assets/images/navbar/games-cs2.webp",
       },
       {
         title: "Terraria",
         subtitle: "Starting from £3.00",
-        href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/terraria",
+        href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/",
         imageSrc: "/assets/images/navbar/games-terraria.webp",
       },
       {
         title: "ARK: Survival Evolved",
         subtitle: "Starting from £12.00",
-        href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/ark",
+        href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/",
         imageSrc: "/assets/images/navbar/games-ark.webp",
       },
       {

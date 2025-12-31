@@ -111,6 +111,12 @@
       "namedRegex": "^/game\\-hosting(?:/)?$"
     },
     {
+      "page": "/hardware",
+      "regex": "^/hardware(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/hardware(?:/)?$"
+    },
+    {
       "page": "/hytale-hosting",
       "regex": "^/hytale\\-hosting(?:/)?$",
       "routeKeys": {},
@@ -121,6 +127,12 @@
       "regex": "^/minecraft\\-hosting(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/minecraft\\-hosting(?:/)?$"
+    },
+    {
+      "page": "/partners",
+      "regex": "^/partners(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/partners(?:/)?$"
     },
     {
       "page": "/sitemap",
