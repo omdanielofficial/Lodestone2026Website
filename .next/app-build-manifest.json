@@ -13,13 +13,13 @@
       "static/chunks/255-cb395327542b56ef.js",
       "static/chunks/main-app-62bb9f351e84418a.js",
       "static/css/8913c9fb2da539d1.css",
-      "static/css/60e3bd547f4dc103.css",
+      "static/css/6bddd0f44e7e153d.css",
       "static/chunks/870fdd6f-ddb5c5cdd085657a.js",
       "static/chunks/619-ba102abea3e3d0e4.js",
-      "static/chunks/239-66b87f554bd341e3.js",
       "static/chunks/230-d22b5af87f8ef321.js",
+      "static/chunks/239-66b87f554bd341e3.js",
       "static/chunks/399-cbb2c348671c8fb9.js",
-      "static/chunks/app/layout-fad2f22ee4e5e73d.js"
+      "static/chunks/app/layout-def4425bf91c989e.js"
     ],
     "/page": [
       "static/chunks/webpack-c70452c554d42530.js",
@@ -29,6 +29,24 @@
       "static/chunks/619-ba102abea3e3d0e4.js",
       "static/chunks/app/page-297ae0db7a48f14b.js"
     ],
+    "/hytale-hosting/page": [
+      "static/chunks/webpack-c70452c554d42530.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-cb395327542b56ef.js",
+      "static/chunks/main-app-62bb9f351e84418a.js",
+      "static/chunks/870fdd6f-ddb5c5cdd085657a.js",
+      "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/230-d22b5af87f8ef321.js",
+      "static/chunks/239-66b87f554bd341e3.js",
+      "static/chunks/app/hytale-hosting/page-a6047fd0ac9a77d5.js"
+    ],
+    "/about-us/page": [
+      "static/chunks/webpack-c70452c554d42530.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/255-cb395327542b56ef.js",
+      "static/chunks/main-app-62bb9f351e84418a.js",
+      "static/chunks/app/about-us/page-4cbfdcedf9698c52.js"
+    ],
     "/dedicated-servers/page": [
       "static/chunks/webpack-c70452c554d42530.js",
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
@@ -36,36 +54,29 @@
       "static/chunks/main-app-62bb9f351e84418a.js",
       "static/chunks/870fdd6f-ddb5c5cdd085657a.js",
       "static/chunks/619-ba102abea3e3d0e4.js",
-      "static/chunks/239-66b87f554bd341e3.js",
       "static/chunks/230-d22b5af87f8ef321.js",
-      "static/chunks/app/dedicated-servers/page-20977d4644f0ce12.js"
+      "static/chunks/239-66b87f554bd341e3.js",
+      "static/chunks/app/dedicated-servers/page-e62ec0f6c6a6b7ec.js"
     ],
-    "/discord-bot-hosting/page": [
+    "/game-hosting/page": [
       "static/chunks/webpack-c70452c554d42530.js",
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
       "static/chunks/255-cb395327542b56ef.js",
       "static/chunks/main-app-62bb9f351e84418a.js",
       "static/chunks/870fdd6f-ddb5c5cdd085657a.js",
       "static/chunks/619-ba102abea3e3d0e4.js",
-      "static/chunks/239-66b87f554bd341e3.js",
       "static/chunks/230-d22b5af87f8ef321.js",
-      "static/chunks/app/discord-bot-hosting/page-6dc2915b73a46535.js"
-    ],
-    "/about-us/page": [
-      "static/chunks/webpack-c70452c554d42530.js",
-      "static/chunks/4bd1b696-c023c6e3521b1417.js",
-      "static/chunks/255-cb395327542b56ef.js",
-      "static/chunks/main-app-62bb9f351e84418a.js",
       "static/chunks/239-66b87f554bd341e3.js",
-      "static/chunks/app/about-us/page-bcfdc30f258045a2.js"
+      "static/chunks/app/game-hosting/page-f6cb4d3a7d5cda4a.js"
     ],
-    "/contact/page": [
+    "/new/page": [
       "static/chunks/webpack-c70452c554d42530.js",
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
       "static/chunks/255-cb395327542b56ef.js",
       "static/chunks/main-app-62bb9f351e84418a.js",
       "static/chunks/619-ba102abea3e3d0e4.js",
-      "static/chunks/app/contact/page-3236277dd32e241e.js"
+      "static/chunks/239-66b87f554bd341e3.js",
+      "static/chunks/app/new/page-792dc43b1370f798.js"
     ],
     "/minecraft-hosting/page": [
       "static/chunks/webpack-c70452c554d42530.js",
@@ -74,18 +85,20 @@
       "static/chunks/main-app-62bb9f351e84418a.js",
       "static/chunks/870fdd6f-ddb5c5cdd085657a.js",
       "static/chunks/619-ba102abea3e3d0e4.js",
-      "static/chunks/239-66b87f554bd341e3.js",
       "static/chunks/230-d22b5af87f8ef321.js",
-      "static/chunks/app/minecraft-hosting/page-15db12504b9273c8.js"
+      "static/chunks/239-66b87f554bd341e3.js",
+      "static/chunks/app/minecraft-hosting/page-53c2b55057c9b58d.js"
     ],
-    "/hytale-hosting/page": [
+    "/discord-bot-hosting/page": [
       "static/chunks/webpack-c70452c554d42530.js",
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
       "static/chunks/255-cb395327542b56ef.js",
       "static/chunks/main-app-62bb9f351e84418a.js",
+      "static/chunks/870fdd6f-ddb5c5cdd085657a.js",
       "static/chunks/619-ba102abea3e3d0e4.js",
+      "static/chunks/230-d22b5af87f8ef321.js",
       "static/chunks/239-66b87f554bd341e3.js",
-      "static/chunks/app/hytale-hosting/page-effa60be5812b912.js"
+      "static/chunks/app/discord-bot-hosting/page-01d66f826787fff4.js"
     ],
     "/partners/page": [
       "static/chunks/webpack-c70452c554d42530.js",
@@ -94,9 +107,9 @@
       "static/chunks/main-app-62bb9f351e84418a.js",
       "static/chunks/870fdd6f-ddb5c5cdd085657a.js",
       "static/chunks/619-ba102abea3e3d0e4.js",
-      "static/chunks/239-66b87f554bd341e3.js",
       "static/chunks/230-d22b5af87f8ef321.js",
-      "static/chunks/app/partners/page-7c811bfaf3256456.js"
+      "static/chunks/239-66b87f554bd341e3.js",
+      "static/chunks/app/partners/page-c24da113766716b6.js"
     ],
     "/hardware/page": [
       "static/chunks/webpack-c70452c554d42530.js",
@@ -114,16 +127,13 @@
       "static/chunks/main-app-62bb9f351e84418a.js",
       "static/chunks/app/sitemap/page-2946c1b71cf20feb.js"
     ],
-    "/game-hosting/page": [
+    "/contact/page": [
       "static/chunks/webpack-c70452c554d42530.js",
       "static/chunks/4bd1b696-c023c6e3521b1417.js",
       "static/chunks/255-cb395327542b56ef.js",
       "static/chunks/main-app-62bb9f351e84418a.js",
-      "static/chunks/870fdd6f-ddb5c5cdd085657a.js",
       "static/chunks/619-ba102abea3e3d0e4.js",
-      "static/chunks/239-66b87f554bd341e3.js",
-      "static/chunks/230-d22b5af87f8ef321.js",
-      "static/chunks/app/game-hosting/page-9f7f5e8ef19d1a20.js"
+      "static/chunks/app/contact/page-3236277dd32e241e.js"
     ],
     "/tos-dev/page": [
       "static/chunks/webpack-c70452c554d42530.js",

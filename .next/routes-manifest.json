@@ -129,6 +129,12 @@
       "namedRegex": "^/minecraft\\-hosting(?:/)?$"
     },
     {
+      "page": "/new",
+      "regex": "^/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/new(?:/)?$"
+    },
+    {
       "page": "/partners",
       "regex": "^/partners(?:/)?$",
       "routeKeys": {},

@@ -30,8 +30,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/_not-found": {
-      "initialStatus": 404,
+    "/": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -44,32 +43,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/_not-found",
-      "dataRoute": "/_not-found.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/hytale-hosting": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/hytale-hosting",
-      "dataRoute": "/hytale-hosting.rsc",
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -127,7 +102,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/": {
+    "/about-us": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -140,8 +115,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
+      "srcRoute": "/about-us",
+      "dataRoute": "/about-us.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -151,7 +126,8 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/partners": {
+    "/_not-found": {
+      "initialStatus": 404,
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -164,8 +140,32 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/partners",
-      "dataRoute": "/partners.rsc",
+      "srcRoute": "/_not-found",
+      "dataRoute": "/_not-found.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/new": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/new",
+      "dataRoute": "/new.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -199,6 +199,30 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/partners": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/partners",
+      "dataRoute": "/partners.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/tos-dev": {
       "experimentalBypassFor": [
         {
@@ -223,7 +247,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/about-us": {
+    "/hytale-hosting": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -236,8 +260,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/about-us",
-      "dataRoute": "/about-us.rsc",
+      "srcRoute": "/hytale-hosting",
+      "dataRoute": "/hytale-hosting.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -247,7 +271,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/hardware": {
+    "/dedicated-servers": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -260,32 +284,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/hardware",
-      "dataRoute": "/hardware.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/discord-bot-hosting": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/discord-bot-hosting",
-      "dataRoute": "/discord-bot-hosting.rsc",
+      "srcRoute": "/dedicated-servers",
+      "dataRoute": "/dedicated-servers.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -319,7 +319,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/dedicated-servers": {
+    "/discord-bot-hosting": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -332,8 +332,32 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/dedicated-servers",
-      "dataRoute": "/dedicated-servers.rsc",
+      "srcRoute": "/discord-bot-hosting",
+      "dataRoute": "/discord-bot-hosting.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/hardware": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/hardware",
+      "dataRoute": "/hardware.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -347,8 +371,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "bfe2b7420e0375949f4106f82d81413f",
-    "previewModeSigningKey": "11a24242d321c2dd650992e202e58ec5276133bbe65ac02b8836ab0f31986627",
-    "previewModeEncryptionKey": "32fed99ab9ec3da550c0cd8dd5db7245d4387905d24c1a30a78d599eb8c17966"
+    "previewModeId": "8552df0c8a86fedb88aaab8f9a3843d2",
+    "previewModeSigningKey": "1befe1e382c17a09677c3ad78ea4f2fa199e72ac154cfdb0875a83d933bdadbf",
+    "previewModeEncryptionKey": "6b76906a29ee78d789618501ab9af6873b787c84b411bd4bffb270b97304d05c"
   }
 }

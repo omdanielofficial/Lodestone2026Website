@@ -170,11 +170,10 @@ const WhyChooseUs = () => {
       />
       <div className="flex flex-col gap-1">
         <h2 className="text-base font-bold md:text-lg">
-          Hytale is releasing on 13th January 2026!
+          HYTALE SERVER HOSTING IS NOW AVAILABLE!
         </h2>
         <p className="text-sm opacity-90 md:text-base">
-          Lodestone will fully support Hytale server hosting once it releases
-          in early access.
+          Use coupon code <b>HYTALE</b> for 30% off your first month.
         </p>
       </div>
     </div>

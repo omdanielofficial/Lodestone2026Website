@@ -20,10 +20,10 @@ const GameCard = () => {
       price: "£2.50",
     },
     {
-      name: "Hytale",
+      name: "Hytale [30% SALE]",
       href: "/hytale-hosting",
       image: "/assets/images/game-hosting/hytale.png",
-      price: "?",
+      price: "£3.50",
     },
     {
       name: "Palworld",

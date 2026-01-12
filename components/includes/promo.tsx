@@ -38,13 +38,13 @@ const Promo = () => {
             <div className="flex flex-col items-center gap-2 lg:flex-row">
               <div
                 className={`flex cursor-pointer items-center gap-2 rounded-xl border-2 border-dashed px-5 py-1 ${isCopied ? "cursor-default opacity-50" : ""}`}
-                onClick={() => !isCopied && copyToClipboard("SWITCH25")}
+                onClick={() => !isCopied && copyToClipboard("HYTALE")}
               >
                 <FontAwesomeIcon icon={faCopy} />
-                <p>{isCopied ? "COPIED ✓" : "SWITCH25"}</p>
+                <p>{isCopied ? "COPIED ✓" : "HYTALE"}</p>
               </div>
               <p>
-                <span className="font-bold">Considering Switching?</span> Get 25% off your first purchase with us! 
+                <span className="font-bold">HYTALE HOSTING NOW AVAILABLE!</span> Get 30% off your first month until 10th February.
               </p>
             </div>
             <FontAwesomeIcon
