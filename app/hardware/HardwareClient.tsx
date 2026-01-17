@@ -8,7 +8,7 @@ type Location = {
   name: string;
   region: "North America" | "Europe" | "Asia Pacific";
   cpu: "AMD Ryzen 9 9950X" | "AMD Ryzen 7 7700X";
-  ram: "DDR4" | "DDR5";
+  ram: "DDR5" | "DDR4";
   clock: string;
   bandwidth: string;
   storage: string;
@@ -34,10 +34,10 @@ const LOCATIONS: Location[] = [
   {
     name: "Frankfurt, Germany",
     region: "Europe",
-    cpu: "AMD Ryzen 7 7700X",
-    ram: "DDR4",
-    clock: "4.5 GHz+",
-    bandwidth: "1 Gbps Network Port",
+    cpu: "AMD Ryzen 9 9950X",
+    ram: "DDR5",
+    clock: "4.3 GHz+",
+    bandwidth: "10 Gbps Network Port",
     storage: "NVMe SSD",
     rented: true,
     pingUrl: "https://de-fra-01.lodestone.host/ping",
