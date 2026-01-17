@@ -35,16 +35,16 @@ const BlogCard: React.FC<BlogCardProps> = ({
 const BlogCards: React.FC = () => {
   const blogPosts = [
     {
-      title: "Install Minecraft modpacks",
-      description: "Modify your game by adding new items...",
+      title: "Installing Minecraft modpacks",
+      description: "How to modify your game by adding new items...",
       imageUrl: "/assets/images/blog/1.jpg",
-      link: "https://lodestone-technologies.gitbook.io/knowledgebase/game-panel/install-modpacks",
+      link: "https://intranex.gitbook.io/lodestone-docs/game-panel/using-the-modpack-manager",
     },
     {
-      title: "Change a Minecraft seed",
-      description: "World seeds control the terrain generation...",
-      imageUrl: "/assets/images/blog/2.webp",
-      link: "https://lodestone-technologies.gitbook.io/knowledgebase/minecraft/change-server-world-seed",
+      title: "Get started with a Hytale server",
+      description: "How to customise and connect to a Hytale server...",
+      imageUrl: "/assets/images/blog/2.jpg",
+      link: "https://intranex.gitbook.io/lodestone-docs/hytale/getting-started-with-a-hytale-server",
     },
     {
       title: "Set up the Dynmap plugin",

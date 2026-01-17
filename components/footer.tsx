@@ -136,7 +136,7 @@ const Footer = () => {
       </div>
 
       {/* Main footer */}
-      <footer className="bg-primary p-5 lg:p-16">
+      <footer className="bg-secondary p-5 lg:p-16">
         <div className="container mx-auto grid max-w-7xl grid-cols-2 gap-10 md:grid-cols-4 lg:grid-cols-6">
           <div className="col-span-2 flex flex-col items-center gap-3 md:col-span-4 md:flex-row md:items-start lg:col-span-2 lg:flex-col">
             <div className="flex items-center gap-3">

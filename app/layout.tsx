@@ -113,7 +113,6 @@ export default function RootLayout({
           <GamePanel />
           <DataCenter />
           <Faq />
-          <BlogCards />
           <Footer />
           <CookieBanner />
         </div>
