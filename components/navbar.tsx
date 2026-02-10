@@ -22,8 +22,8 @@ const menuItems = [
         imageSrc: "/assets/images/navbar/games-minecraft.webp",
       },
       {
-        title: "Hytale [30% SALE]",
-        subtitle: "Starting from £3.50",
+        title: "Hytale",
+        subtitle: "Starting from £5.00",
         href: "/hytale-hosting",
         imageSrc: "/assets/images/navbar/hytale.jpg",
       },

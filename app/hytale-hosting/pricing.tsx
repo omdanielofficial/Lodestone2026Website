@@ -27,11 +27,11 @@ const plans = [
     backupspremium: "20GB",
     databasesbasic: "3",
     databasespremium: "3",
-    pricebasic: "£3.50",
+    pricebasic: "£3.75",
     pricepremium: "£4.50",
     image: "/assets/images/hytale-hosting/kweebec.webp",
     linkbasic:
-      "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/kweebec&promocode=HYTALE",
+      "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/kweebec&promocode=SWITCH25",
     linkpremium:
       "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/kweebec&billingcycle=quarterly",
     color: "#487451",
@@ -45,11 +45,11 @@ const plans = [
     backupspremium: "30GB",
     databasesbasic: "3",
     databasespremium: "3",
-    pricebasic: "£5.25",
+    pricebasic: "£5.62",
     pricepremium: "£6.75",
     image: "/assets/images/hytale-hosting/tessa.webp",
     linkbasic:
-      "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/tessa&promocode=HYTALE",
+      "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/tessa&promocode=SWITCH25",
     linkpremium:
       "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/tessa&billingcycle=quarterly",
     color: "#9c6222",
@@ -63,11 +63,11 @@ const plans = [
     backupspremium: "40GB",
     databasesbasic: "3",
     databasespremium: "3",
-    pricebasic: "£7.00",
+    pricebasic: "£7.50",
     pricepremium: "£9.00",
     image: "/assets/images/hytale-hosting/kyros.webp",
     linkbasic:
-      "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/kyros&promocode=HYTALE",
+      "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/kyros&promocode=SWITCH25",
     linkpremium:
       "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/kyros&billingcycle=quarterly",
     color: "#d317e9",
@@ -81,11 +81,11 @@ const plans = [
     backupspremium: "60GB",
     databasesbasic: "3",
     databasespremium: "3",
-    pricebasic: "£10.50",
+    pricebasic: "£11.25",
     pricepremium: "£13.50",
     image: "/assets/images/hytale-hosting/varyn.webp",
     linkbasic:
-      "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/varyn&promocode=HYTALE",
+      "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/varyn&promocode=SWITCH25",
     linkpremium:
       "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/varyn&billingcycle=quarterly",
     color: "#a6d386",
@@ -124,7 +124,7 @@ const PlanCard = ({ plan, isPremium }: any) => (
         className="absolute left-0 top-0 w-full rounded-t-xl py-1 text-center text-xs font-bold uppercase tracking-wide"
         style={{ backgroundColor: plan.color }}
       >
-        30% OFF FIRST MONTH
+        25% OFF FIRST MONTH
       </div>
     )}
 
@@ -233,7 +233,7 @@ export default function Pricing() {
 
             <div className="mb-4 flex flex-col gap-2 text-center md:mb-0 md:flex-row">
               {[
-                { key: "basic", label: "Monthly (-30%)" },
+                { key: "basic", label: "Monthly (-25%)" },
                 { key: "premium", label: "Quarterly (-10%)" },
               ].map(({ key, label }) => {
                 const isActive = (key === "premium") === isPremium;

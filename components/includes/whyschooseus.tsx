@@ -173,7 +173,7 @@ const WhyChooseUs = () => {
           HYTALE SERVER HOSTING IS NOW AVAILABLE!
         </h2>
         <p className="text-sm opacity-90 md:text-base">
-          Use coupon code <b>HYTALE</b> for 30% off your first month.
+          Use coupon code <b>SWITCH25</b> for 25% off your first month.
         </p>
       </div>
     </div>
