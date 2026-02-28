@@ -30,37 +30,37 @@ const menuItems = [
       {
         title: "Palworld",
         subtitle: "Starting from £12.00",
-        href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/",
+        href: "https://client.intranex.org/index.php?rp=/store/game-hosting/",
         imageSrc: "/assets/images/navbar/games-palworld.webp",
       },
       {
         title: "Rust",
         subtitle: "Starting from £9.00",
-        href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/",
+        href: "https://client.intranex.org/index.php?rp=/store/game-hosting/",
         imageSrc: "/assets/images/navbar/games-rust.webp",
       },
       {
         title: "Valheim",
         subtitle: "Starting from £6.00",
-        href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/",
+        href: "https://client.intranex.org/index.php?rp=/store/game-hosting/",
         imageSrc: "/assets/images/navbar/games-valheim.webp",
       },
       {
         title: "Counter-Strike 2",
         subtitle: "Starting from £9.00",
-        href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/",
+        href: "https://client.intranex.org/index.php?rp=/store/game-hosting/",
         imageSrc: "/assets/images/navbar/games-cs2.webp",
       },
       {
         title: "Terraria",
         subtitle: "Starting from £3.00",
-        href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/",
+        href: "https://client.intranex.org/index.php?rp=/store/game-hosting/",
         imageSrc: "/assets/images/navbar/games-terraria.webp",
       },
       {
         title: "ARK: Survival Evolved",
         subtitle: "Starting from £12.00",
-        href: "https://billing.lodestone.host/index.php?rp=/store/game-hosting/",
+        href: "https://client.intranex.org/index.php?rp=/store/game-hosting/",
         imageSrc: "/assets/images/navbar/games-ark.webp",
       },
       {
@@ -211,7 +211,7 @@ const Navbar = () => {
 
         {/* Desktop client portal button */}
         <Link
-          href="https://billing.lodestone.host"
+          href="https://client.intranex.org"
           className="hidden items-center gap-2 rounded-md bg-violet-600 px-4 py-2 font-semibold text-white hover:bg-violet-700 active:bg-violet-600 lg:flex"
         >
           <FontAwesomeIcon icon={faRightToBracket} className="h-5 w-5" />
@@ -319,7 +319,7 @@ const Navbar = () => {
             )}
 
             <Link
-              href="https://billing.lodestone.host"
+              href="https://client.intranex.org"
               className="block rounded-md bg-secondary px-3 py-2 text-center text-white hover:opacity-80"
             >
               Client Portal

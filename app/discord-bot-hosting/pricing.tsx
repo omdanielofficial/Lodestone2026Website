@@ -35,8 +35,8 @@ const plans = [
     pricebasic: "£0.50",
     pricepremium: "£0.45",
     image: "/assets/images/discord-bot-hosting/bot.webp",
-    linkbasic: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/bot-256mb",
-    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/bot-256mb&billingcycle=quarterly",
+    linkbasic: "https://client.intranex.org/index.php?rp=/store/discord-bot-hosting/bot-256mb",
+    linkpremium: "https://client.intranex.org/index.php?rp=/store/discord-bot-hosting/bot-256mb&billingcycle=quarterly",
     color: "#5765f0",
   },
   {
@@ -49,8 +49,8 @@ const plans = [
     pricebasic: "£1.00",
     pricepremium: "£0.90",
     image: "/assets/images/discord-bot-hosting/bot.webp",
-    linkbasic: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/bot-512mb",
-    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/bot-512mb&billingcycle=quarterly",
+    linkbasic: "https://client.intranex.org/index.php?rp=/store/discord-bot-hosting/bot-512mb",
+    linkpremium: "https://client.intranex.org/index.php?rp=/store/discord-bot-hosting/bot-512mb&billingcycle=quarterly",
     color: "#5765f0",
   },
   {
@@ -63,8 +63,8 @@ const plans = [
     pricebasic: "£2.00",
     pricepremium: "£1.80",
     image: "/assets/images/discord-bot-hosting/bot.webp",
-    linkbasic: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/bot-1024mb",
-    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/bot-1024mb&billingcycle=quarterly",
+    linkbasic: "https://client.intranex.org/index.php?rp=/store/discord-bot-hosting/bot-1024mb",
+    linkpremium: "https://client.intranex.org/index.php?rp=/store/discord-bot-hosting/bot-1024mb&billingcycle=quarterly",
     color: "#5765f0",
   },
   {
@@ -77,8 +77,8 @@ const plans = [
     pricebasic: "£4.00",
     pricepremium: "£3.60",
     image: "/assets/images/discord-bot-hosting/bot.webp",
-    linkbasic: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/bot-2048mb",
-    linkpremium: "https://billing.lodestone.host/index.php?rp=/store/discord-bot-hosting/bot-2048mb&billingcycle=quarterly",
+    linkbasic: "https://client.intranex.org/index.php?rp=/store/discord-bot-hosting/bot-2048mb",
+    linkpremium: "https://client.intranex.org/index.php?rp=/store/discord-bot-hosting/bot-2048mb&billingcycle=quarterly",
     color: "#5765f0",
   },
 ];

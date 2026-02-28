@@ -31,9 +31,9 @@ const plans = [
     pricepremium: "£4.50",
     image: "/assets/images/hytale-hosting/kweebec.webp",
     linkbasic:
-      "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/kweebec&promocode=SWITCH25",
+      "https://client.intranex.org/index.php?rp=/store/hytale-hosting/kweebec&promocode=SWITCH25",
     linkpremium:
-      "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/kweebec&billingcycle=quarterly",
+      "https://client.intranex.org/index.php?rp=/store/hytale-hosting/kweebec&billingcycle=quarterly",
     color: "#487451",
   },
   {
@@ -49,9 +49,9 @@ const plans = [
     pricepremium: "£6.75",
     image: "/assets/images/hytale-hosting/tessa.webp",
     linkbasic:
-      "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/tessa&promocode=SWITCH25",
+      "https://client.intranex.org/index.php?rp=/store/hytale-hosting/tessa&promocode=SWITCH25",
     linkpremium:
-      "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/tessa&billingcycle=quarterly",
+      "https://client.intranex.org/index.php?rp=/store/hytale-hosting/tessa&billingcycle=quarterly",
     color: "#9c6222",
   },
   {
@@ -67,9 +67,9 @@ const plans = [
     pricepremium: "£9.00",
     image: "/assets/images/hytale-hosting/kyros.webp",
     linkbasic:
-      "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/kyros&promocode=SWITCH25",
+      "https://client.intranex.org/index.php?rp=/store/hytale-hosting/kyros&promocode=SWITCH25",
     linkpremium:
-      "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/kyros&billingcycle=quarterly",
+      "https://client.intranex.org/index.php?rp=/store/hytale-hosting/kyros&billingcycle=quarterly",
     color: "#d317e9",
   },
   {
@@ -85,9 +85,9 @@ const plans = [
     pricepremium: "£13.50",
     image: "/assets/images/hytale-hosting/varyn.webp",
     linkbasic:
-      "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/varyn&promocode=SWITCH25",
+      "https://client.intranex.org/index.php?rp=/store/hytale-hosting/varyn&promocode=SWITCH25",
     linkpremium:
-      "https://billing.lodestone.host/index.php?rp=/store/hytale-hosting/varyn&billingcycle=quarterly",
+      "https://client.intranex.org/index.php?rp=/store/hytale-hosting/varyn&billingcycle=quarterly",
     color: "#a6d386",
   },
 ];

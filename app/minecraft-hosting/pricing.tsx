@@ -31,9 +31,9 @@ const plans = [
     pricepremium: "£2.25",
     image: "/assets/images/minecraft-hosting/coal.webp",
     linkbasic:
-      "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/coal",
+      "https://client.intranex.org/index.php?rp=/store/minecraft-hosting/coal",
     linkpremium:
-      "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/coal&billingcycle=quarterly",
+      "https://client.intranex.org/index.php?rp=/store/minecraft-hosting/coal&billingcycle=quarterly",
     color: "#474747",
   },
   {
@@ -49,9 +49,9 @@ const plans = [
     pricepremium: "£4.50",
     image: "/assets/images/minecraft-hosting/iron.webp",
     linkbasic:
-      "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/iron",
+      "https://client.intranex.org/index.php?rp=/store/minecraft-hosting/iron",
     linkpremium:
-      "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/iron&billingcycle=quarterly",
+      "https://client.intranex.org/index.php?rp=/store/minecraft-hosting/iron&billingcycle=quarterly",
     color: "#FCB577",
   },
   {
@@ -67,9 +67,9 @@ const plans = [
     pricepremium: "£6.75",
     image: "/assets/images/minecraft-hosting/gold.webp",
     linkbasic:
-      "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/gold",
+      "https://client.intranex.org/index.php?rp=/store/minecraft-hosting/gold",
     linkpremium:
-      "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/gold&billingcycle=quarterly",
+      "https://client.intranex.org/index.php?rp=/store/minecraft-hosting/gold&billingcycle=quarterly",
     color: "#DECD2E",
   },
   {
@@ -85,9 +85,9 @@ const plans = [
     pricepremium: "£9.00",
     image: "/assets/images/minecraft-hosting/lapis.webp",
     linkbasic:
-      "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/lapis",
+      "https://client.intranex.org/index.php?rp=/store/minecraft-hosting/lapis",
     linkpremium:
-      "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/lapis&billingcycle=quarterly",
+      "https://client.intranex.org/index.php?rp=/store/minecraft-hosting/lapis&billingcycle=quarterly",
     color: "#0063CD",
   },
   {
@@ -103,9 +103,9 @@ const plans = [
     pricepremium: "£13.50",
     image: "/assets/images/minecraft-hosting/diamond.webp",
     linkbasic:
-      "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/diamond",
+      "https://client.intranex.org/index.php?rp=/store/minecraft-hosting/diamond",
     linkpremium:
-      "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/diamond&billingcycle=quarterly",
+      "https://client.intranex.org/index.php?rp=/store/minecraft-hosting/diamond&billingcycle=quarterly",
     color: "#1DCDE2",
   },
   {
@@ -121,9 +121,9 @@ const plans = [
     pricepremium: "£18.00",
     image: "/assets/images/minecraft-hosting/emerald.webp",
     linkbasic:
-      "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/emerald",
+      "https://client.intranex.org/index.php?rp=/store/minecraft-hosting/emerald",
     linkpremium:
-      "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/emerald&billingcycle=quarterly",
+      "https://client.intranex.org/index.php?rp=/store/minecraft-hosting/emerald&billingcycle=quarterly",
     color: "#65E185",
   },
   {
@@ -139,9 +139,9 @@ const plans = [
     pricepremium: "£27.00",
     image: "/assets/images/minecraft-hosting/amethyst.webp",
     linkbasic:
-      "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/amethyst",
+      "https://client.intranex.org/index.php?rp=/store/minecraft-hosting/amethyst",
     linkpremium:
-      "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/amethyst&billingcycle=quarterly",
+      "https://client.intranex.org/index.php?rp=/store/minecraft-hosting/amethyst&billingcycle=quarterly",
     color: "#BD4CD8",
   },
   {
@@ -157,9 +157,9 @@ const plans = [
     pricepremium: "£36.00",
     image: "/assets/images/minecraft-hosting/beacon.webp",
     linkbasic:
-      "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/beacon",
+      "https://client.intranex.org/index.php?rp=/store/minecraft-hosting/beacon",
     linkpremium:
-      "https://billing.lodestone.host/index.php?rp=/store/minecraft-hosting/beacon&billingcycle=quarterly",
+      "https://client.intranex.org/index.php?rp=/store/minecraft-hosting/beacon&billingcycle=quarterly",
     color: "#09A9D7",
   },
 ];

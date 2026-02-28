@@ -23,7 +23,7 @@ const plans = [
     pricebasic: "£125.00",
     image: "/assets/images/dedicated-servers/ryzen7.jpg",
     location: "New York City",
-    linkbasic: "https://billing.lodestone.host/submitticket.php",
+    linkbasic: "https://client.intranex.org/submitticket.php",
   },
   {
     name: "Ryzen 9 5950X",
@@ -34,7 +34,7 @@ const plans = [
     pricebasic: "£140.00",
     image: "/assets/images/dedicated-servers/ryzen9.webp",
     location: "New York City",
-    linkbasic: "https://billing.lodestone.host/submitticket.php",
+    linkbasic: "https://client.intranex.org/submitticket.php",
   },
   {
     name: "Ryzen 9 7950X",
@@ -45,7 +45,7 @@ const plans = [
     pricebasic: "£160.00",
     image: "/assets/images/dedicated-servers/ryzen9.webp",
     location: "New York City",
-    linkbasic: "https://billing.lodestone.host/submitticket.php",
+    linkbasic: "https://client.intranex.org/submitticket.php",
   },
   {
     name: "Ryzen 9 9950X",
@@ -56,7 +56,7 @@ const plans = [
     pricebasic: "£225.00",
     image: "/assets/images/dedicated-servers/ryzen9.webp",
     location: "New York City",
-    linkbasic: "https://billing.lodestone.host/submitticket.php",
+    linkbasic: "https://client.intranex.org/submitticket.php",
   },
 ];
 

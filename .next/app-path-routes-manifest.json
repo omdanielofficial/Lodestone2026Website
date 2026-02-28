@@ -1,17 +1,17 @@
 {
-  "/favicon.ico/route": "/favicon.ico",
   "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
   "/page": "/",
-  "/dedicated-servers/page": "/dedicated-servers",
   "/about-us/page": "/about-us",
+  "/contact/page": "/contact",
   "/discord-bot-hosting/page": "/discord-bot-hosting",
-  "/game-hosting/page": "/game-hosting",
+  "/dedicated-servers/page": "/dedicated-servers",
   "/minecraft-hosting/page": "/minecraft-hosting",
   "/hytale-hosting/page": "/hytale-hosting",
-  "/partners/page": "/partners",
-  "/new/page": "/new",
   "/hardware/page": "/hardware",
+  "/new/page": "/new",
+  "/partners/page": "/partners",
   "/sitemap/page": "/sitemap",
-  "/contact/page": "/contact",
+  "/game-hosting/page": "/game-hosting",
   "/tos-dev/page": "/tos-dev"
 }

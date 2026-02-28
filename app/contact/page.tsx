@@ -32,7 +32,7 @@ const contactLinks = [
   },
   {
     title: "Billing Support",
-    href: "https://billing.lodestone.host/submitticket.php",
+    href: "https://client.intranex.org/submitticket.php",
     description: "Use this for questions about your account, invoices, payments, subscriptions, or refunds. Tickets are answered Mon-Fri 10:00-17:00 GMT.",
   },
   {
