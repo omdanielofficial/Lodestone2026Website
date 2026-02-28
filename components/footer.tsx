@@ -77,7 +77,7 @@ const Footer = () => {
 
           <div className="flex items-center gap-4 md:ml-auto">
             <Link
-              href="https://discord.gg/lodestonehost"
+              href="https://discord.gg/intranex"
               target="_self"
               className="flex items-center"
               aria-label="Join Discord"
