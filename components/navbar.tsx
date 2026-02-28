@@ -82,7 +82,7 @@ const menuItems = [
       },
       {
         title: "Dedicated Servers",
-        href: "/dedicated-servers",
+        href: "https://intranex.org/dedicated",
       },
     ],
   },

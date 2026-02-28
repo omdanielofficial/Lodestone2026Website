@@ -19,7 +19,7 @@ const Footer = () => {
         { name: "Hytale Hosting", url: "/hytale-hosting" },
         { name: "Game Hosting", url: "/game-hosting" },
         { name: "Discord Bot Hosting", url: "/discord-bot-hosting" },
-        { name: "Dedicated Servers", url: "/dedicated-servers" },
+        { name: "Dedicated Servers", url: "https://intranex.org/dedicated" },
       ],
     },
     {
@@ -41,7 +41,7 @@ const Footer = () => {
       items: [
         { name: "Contact", url: "/contact" },
         { name: "Documentation", url: "https://docs.lodestone.host" },
-        { name: "Network Status", url: "https://networkstatus.lodestone.host" },
+        { name: "Network Status", url: "https://status.intranex.org" },
       ],
     },
     {
